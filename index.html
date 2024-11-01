@@ -12,10 +12,10 @@
     <!-- Container with a navbar.  Navbar with 4 buttons:  classes, php/mvc, vue.js/js, laravel/quasar -->
     <div class="container">
         <div class="navbar">
-            <a href="classes.php">Classes</a>
-            <a href="phpmvc.php">PHP/MVC</a>
-            <a href="vuejs.php">Vue.js/JS</a>
-            <a href="laravelquasar.php">Laravel/Quasar</a>
+            <button id="classes">classes</button>
+            <button id="php">php/mvc</button>
+            <button id="js">vue.js/js</button>
+            <button id="laravel">laravel/quasar</button>
         </div>
     </div>
 
@@ -23,7 +23,127 @@
     <div class="episodes">
         <ul></ul>
     </div>
-    <script src="script.js"></script>
+
+    <script type="module">
+        import { contentsClass, contentsPHP, contentsJS } from "./conents.js";
+
+        let contents;
+        let numberOfLines;
+
+        let classes = document.getElementById('classes');
+        let php = document.getElementById('php');
+        let js = document.getElementById('js');
+        let laravel = document.getElementById('laravel');
+
+        function updateEpisodesList() {
+            const episodesArray = Array.from({ length: numberOfLines }, (_, i) => `Episode ${i + 1}`);
+            const episodesList = document.querySelector('.episodes ul');
+            episodesList.innerHTML = ''; // Clear existing list
+
+            for (const [index, episode] of episodesArray.entries()) {
+                const li = document.createElement('li');
+                li.textContent = episode;
+                li.dataset.index = index; // Store the index in a data attribute
+                episodesList.appendChild(li);
+            }
+
+            // Open and close episode bar
+            let currentExpandedItem = null;
+
+            document.querySelectorAll('.episodes ul li').forEach(item => {
+                item.style.transition = 'height 0.3s';
+                item.style.height = '50px'; // Set initial height
+
+                item.addEventListener('click', () => {
+                    if (currentExpandedItem && currentExpandedItem !== item) {
+                        currentExpandedItem.style.height = '50px'; // Reset previous expanded item
+                        currentExpandedItem.querySelector('.content').remove(); // Remove previous content
+                        currentExpandedItem.querySelector('.episode-title').style.display = 'block'; // Show the title again
+                    }
+                    if (item.querySelector('.content')) {
+                        item.querySelector('.content').remove(); // Remove content
+                        item.querySelector('.episode-title').style.display = 'block'; // Show the title again
+                        item.style.height = '50px'; // Reset height
+                        item.classList.remove('active'); // Remove active class
+                    } else {
+                        const contentDiv = document.createElement('div');
+                        contentDiv.classList.add('content');
+                        contentDiv.innerHTML = contents[item.dataset.index].replace(/(\d{2}:\d{2} - )?/g, '').replace(/\n/g, '<br>');
+                        item.querySelector('.episode-title').style.display = 'none'; // Hide the title
+                        item.appendChild(contentDiv);
+                        item.style.height = `${contentDiv.scrollHeight + 50}px`; // Set height to content height + initial height
+                        item.classList.add('active'); // Add active class
+
+                        // Wait for the height transition to complete before showing the content
+                        item.addEventListener('transitionend', function showContent(event) {
+                            if (event.propertyName === 'height') {
+                                contentDiv.style.display = 'block';
+                                item.removeEventListener('transitionend', showContent);
+                            }
+                        });
+                        contentDiv.style.display = 'none'; // Initially hide the content
+                    }
+                    currentExpandedItem = item.querySelector('.content') ? item : null;
+                });
+
+                // Wrap the episode title in a span for easier manipulation
+                const titleSpan = document.createElement('span');
+                titleSpan.classList.add('episode-title');
+                titleSpan.textContent = item.textContent;
+                item.textContent = '';
+                item.appendChild(titleSpan);
+
+                // Add hover effect using JavaScript
+                item.addEventListener('mouseover', () => {
+                    item.style.backgroundColor = 'var(--color-hover)';
+                    item.style.transition = '0.4s';
+                    item.style.color = 'var(--color-white)';
+                    item.style.cursor = 'pointer';
+                });
+
+                item.addEventListener('mouseout', () => {
+                    item.style.backgroundColor = 'var(--color-logodark)';
+                    item.style.color = 'var(--color-logolight)';
+                });
+            });
+        }
+
+        function setActiveButton(button) {
+            document.querySelectorAll('.navbar button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            button.classList.add('active');
+        }
+
+        classes.addEventListener('click', () => {
+            contents = contentsClass;
+            numberOfLines = 4;
+            updateEpisodesList();
+            setActiveButton(classes);
+        });
+
+        php.addEventListener('click', () => {
+            contents = contentsPHP;
+            numberOfLines = 32;
+            updateEpisodesList();
+            setActiveButton(php);
+        });
+
+        js.addEventListener('click', () => {
+            contents = contentsJS;
+            numberOfLines = 22; // Set appropriate number of lines for JS
+            updateEpisodesList();
+            setActiveButton(js);
+        });
+
+        laravel.addEventListener('click', () => {
+            contents = contentsLaravel;
+            numberOfLines = 5; // Set appropriate number of lines for Laravel
+            updateEpisodesList();
+            setActiveButton(laravel);
+        });
+
+    </script>
 </body>
 
 </html>

@@ -1,45 +1,10 @@
-const contents = [
-    `<a href="https://youtu.be/CuZVhF_P96k" target="_blank">Go to Episode 1</a>
-Intro
-Basic concepts
-Why Classes?
-Visualizing Classes
-Create class with constructor
-Static Functions
-Naming error
-Recap
-Instantiation
-Recap
-Concepts of economical writing
-Recap`,
+import { contentsClass } from "./conents.js";
+let contents
 
-    `<a href="https://youtu.be/bNN3aZizrb4" target="_blank">Go to Episode 2</a>
-Intro
-What is an object?
-Object in Javascript
-Associative(Key Value Pairs) vs Indexed 
-Explanation of JS vs PHP
-Object Instantiation of classes
-Initializing variables in php vs js
-Understanding "this"`,
-
-    `<a href="https://youtu.be/PEjaTR2aLXI" target="_blank">Go to Episode 3</a>
-Intro
-Objects and "this" (continued from previous episode)
-Why "this"?  Addressing scope of classes`,
-
-    `<a href="https://youtu.be/PZmainUEBYs" target="_blank">Go to Episode 4</a>
-Intro
-Demonstration of inheritance for functions
-Inheritance of constructor
-Abstract Classes
-Abstract Functions
-Interface
-Typehints in constructor
-Typehints in methods
-Traits
-Recap`
-];
+let classes = function () {
+    console.log('Classes button clicked');
+    // Logic for handling classes content
+}
 
 const episodesArray = Array.from({ length: 4 }, (_, i) => `Episode ${i + 1}`);
 console.log(episodesArray);
