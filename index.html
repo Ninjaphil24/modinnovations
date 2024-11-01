@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <!-- Container with a navbar.  Navbar with 4 buttons:  classes, php/mvc, vue.js/js, laravel/quasar -->
+    <!-- add svg from img folder -->
     <div class="container">
         <div class="navbar">
             <button id="classes">classes</button>
@@ -19,13 +19,12 @@
         </div>
     </div>
 
-    <!-- ul with 5 items named "Episode 1" etc -->
     <div class="episodes">
         <ul></ul>
     </div>
 
     <script type="module">
-        import { contentsClass, contentsPHP, contentsJS } from "./conents.js";
+        import { contentsClass, contentsPHP, contentsJS, contentsLaravel } from "./conents.js";
 
         let contents;
         let numberOfLines;
@@ -115,16 +114,28 @@
             button.classList.add('active');
         }
 
+
         classes.addEventListener('click', () => {
             contents = contentsClass;
             numberOfLines = 4;
+            document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-classes');
+            document.body.style.backgroundImage = "url('img/classes.svg')";
+            document.body.style.backgroundSize = "100px";
+            document.body.style.backgroundRepeat = "repeat";
             updateEpisodesList();
             setActiveButton(classes);
         });
 
+        // document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-bg');
+
         php.addEventListener('click', () => {
             contents = contentsPHP;
             numberOfLines = 32;
+            document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-php');
+            document.body.style.backgroundImage = "url('img/php.svg')";
+            document.body.style.backgroundSize = "100px";
+            document.body.style.backgroundRepeat = "repeat";
+            // document.body.style.opacity = "0.5";
             updateEpisodesList();
             setActiveButton(php);
         });
@@ -132,13 +143,23 @@
         js.addEventListener('click', () => {
             contents = contentsJS;
             numberOfLines = 22; // Set appropriate number of lines for JS
+            document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-js1');
+            document.body.style.backgroundImage = "url('img/vue.svg')";
+            document.body.style.backgroundSize = "100px";
+            document.body.style.backgroundRepeat = "repeat";
+            // document.body.style.opacity = "0.5";
             updateEpisodesList();
             setActiveButton(js);
         });
 
         laravel.addEventListener('click', () => {
             contents = contentsLaravel;
-            numberOfLines = 5; // Set appropriate number of lines for Laravel
+            numberOfLines = 4; // Set appropriate number of lines for Laravel
+            document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-laravel');
+            document.body.style.backgroundImage = "url('img/laravel.svg')";
+            document.body.style.backgroundSize = "100px";
+            document.body.style.backgroundRepeat = "repeat";
+            // document.body.style.opacity = "0.5";
             updateEpisodesList();
             setActiveButton(laravel);
         });

@@ -5,6 +5,11 @@
     --color-hover: #1e70bc;
     --color-logolight: #7db4e9;
     --color-logodark: #1167b9;
+    --color-classes: #cd945a;
+    --color-php: #777BB4;
+    --color-js1: #42B883;
+    --color-js2: #35495E;
+    --color-laravel: #1A1A1A;
 }
 
 * {
@@ -18,8 +23,33 @@ body {
     width: 100%;
     height: 100%;
     font-family: "PP Supply Sans", sans-serif;
-    background: var(--color-bg);
+    /* background-color: var(--color-bg); */
+    transition: 2s;
 }
+
+.classes {
+    --color-bg: #cd945a;
+}
+
+.php {
+    width: 100%;
+    height: 100%;
+    --color-bg: #777BB4;
+    background-image: url('img/php.svg');
+    /* background-repeat: repeat; */
+    background-size: 100px;
+    transition: 2s;
+}
+
+.js {
+    --color-bg: #42B883;
+    background-image: url('img/vue.svg');
+    /* background-repeat: repeat; */
+    background-size: 100px;
+    transition: 2s;
+}
+
+
 
 .container {
     display: flex;
@@ -58,9 +88,10 @@ body {
     color: var(--color-logodark);
 }
 
+/* Make .episodes scroll independently of the back ground */
 .episodes {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
