@@ -121,12 +121,14 @@
             document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-classes');
             document.body.style.backgroundImage = "url('img/classes.svg')";
             document.body.style.backgroundSize = "100px";
-            document.body.style.backgroundRepeat = "repeat";
+            document.body.style.backgroundRepeat = "no-repeat";
             updateEpisodesList();
             setActiveButton(classes);
         });
 
-        // document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-bg');
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-bg');
+        });
 
         php.addEventListener('click', () => {
             contents = contentsPHP;
@@ -134,7 +136,7 @@
             document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-php');
             document.body.style.backgroundImage = "url('img/php.svg')";
             document.body.style.backgroundSize = "100px";
-            document.body.style.backgroundRepeat = "repeat";
+            document.body.style.backgroundRepeat = "no-repeat";
             // document.body.style.opacity = "0.5";
             updateEpisodesList();
             setActiveButton(php);
@@ -146,7 +148,7 @@
             document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-js1');
             document.body.style.backgroundImage = "url('img/vue.svg')";
             document.body.style.backgroundSize = "100px";
-            document.body.style.backgroundRepeat = "repeat";
+            document.body.style.backgroundRepeat = "no-repeat";
             // document.body.style.opacity = "0.5";
             updateEpisodesList();
             setActiveButton(js);
@@ -158,7 +160,7 @@
             document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-laravel');
             document.body.style.backgroundImage = "url('img/laravel.svg')";
             document.body.style.backgroundSize = "100px";
-            document.body.style.backgroundRepeat = "repeat";
+            document.body.style.backgroundRepeat = "no-repeat";
             // document.body.style.opacity = "0.5";
             updateEpisodesList();
             setActiveButton(laravel);
