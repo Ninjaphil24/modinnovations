@@ -23,12 +23,13 @@ body {
     width: 100%;
     height: 100%;
     font-family: "PP Supply Sans", sans-serif;
-    /* background-color: var(--color-bg); */
     transition: 2s;
 }
 
-/* Style nav tag to place logo on the right, buttons on the left.  Use root colorscheme and style buttons as below */
 nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -36,6 +37,8 @@ nav {
     padding: 10px 20px;
     background-color: var(--color-bgsecondary);
     color: var(--color-white);
+    z-index: 1000;
+    /* Ensure it stays on top of other elements */
 }
 
 .nav-links {
@@ -62,20 +65,23 @@ nav {
     cursor: pointer;
 }
 
-
 nav .logo img {
     height: 100px;
 }
 
-/* Courstes Navbar Start */
+/* Courses Navbar Start */
 .container {
     display: flex;
     margin: 10px;
     justify-content: center;
+    padding-top: 60px;
+    width: 100%;
 }
+
 
 .container .navbar {
     border-radius: 10px;
+    height: 80px;
     width: 40%;
     min-width: 375px;
     padding: 15px;
@@ -84,28 +90,34 @@ nav .logo img {
     justify-content: space-between;
 }
 
-.navbar button {
-    border-radius: 10px;
-    background-color: var(--color-logodark);
-    color: var(--color-logolight);
-    padding: 5px;
-    margin: 2px;
-    text-decoration: none;
-    outline: 1px solid var(--color-logolight);
-}
 
-.navbar button:hover {
-    background-color: var(--color-logolight);
-    color: var(--color-logodark);
-    transition: 0.5s;
+button#classes,
+button#php,
+button#js,
+button#laravel {
+    border: none;
+    /* Remove default border */
+    background: none;
+    /* Remove default background */
+    padding: 0;
+    /* Remove default padding */
+    outline: none;
+    /* Remove focus outline */
     cursor: pointer;
-    ;
+    /* Optional: Add pointer cursor for better UX */
 }
 
-.navbar button.active {
-    background-color: var(--color-logolight);
-    color: var(--color-logodark);
+button#classes img,
+button#php img,
+button#js img,
+button#laravel img {
+    width: 100%;
 }
+
+/* button#classes img {
+    height: 400px;
+} */
+
 
 /* Courses Navbar end */
 
@@ -123,7 +135,6 @@ nav .logo img {
     justify-content: center;
     align-items: center;
     height: 60vh;
-    background-color: var(--color-bg);
     color: var(--color-white);
 }
 
@@ -325,6 +336,7 @@ nav .logo img {
     background-color: var(--color-logodark);
     color: var(--color-logolight);
 }
+
 
 .content a {
     text-decoration: none;

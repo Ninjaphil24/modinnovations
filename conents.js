@@ -28,7 +28,7 @@ Intro
 Objects and "this" (continued from previous episode)
 Why "this"?  Addressing scope of classes`,
 
-    `<a href="https://youtu.be/PZmainUEBYs" target="_blank">Go to Episode 4</a>
+    `<a href="https://youtu.be/PZmainUEBYs" target="_blank">Go to Episode 4</a>     
 Intro
 Demonstration of inheritance for functions
 Inheritance of constructor

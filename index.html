@@ -148,8 +148,14 @@
             // Add your form submission logic here
 
             // Show thank you message and hide form
+            document.querySelector('.formContainer').style.transition = 'opacity 1s';
+            document.querySelector('.thankYouContainer').style.transition = 'opacity 1s';
             document.querySelector('.formContainer').classList.add('inactive');
-            document.querySelector('.thankYouContainer').classList.remove('inactive');
+            document.querySelector('.formContainer').style.opacity = 0;
+            setTimeout(() => {
+                document.querySelector('.thankYouContainer').classList.remove('inactive');
+                document.querySelector('.thankYouContainer').style.opacity = 1;
+            }, 1000);
         });
         // Contact End
 
@@ -166,11 +172,11 @@
             numberOfLines = 4;
             document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-classes');
             document.body.style.backgroundImage = "url('img/classes.svg')";
-            document.body.style.backgroundSize = "100px";
+            document.body.style.backgroundAttachment = "fixed";
             document.body.style.backgroundRepeat = "no-repeat";
             document.body.style.backgroundPosition = "10px 70px";
+            document.body.style.backgroundSize = "100px";
             updateEpisodesList(numberOfLines, contents);
-            setActiveButton(classes);
             document.querySelector('.episodes').style.display = 'flex';
             document.querySelector('.presentation').style.display = 'none';
         });
@@ -181,6 +187,7 @@
             document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-php');
             document.body.style.backgroundImage = "url('img/php.svg')";
             document.body.style.backgroundSize = "100px";
+            document.body.style.backgroundAttachment = "fixed";
             document.body.style.backgroundRepeat = "no-repeat";
             document.body.style.backgroundPosition = "10px 70px";
             updateEpisodesList(numberOfLines, contents);
@@ -194,6 +201,7 @@
             numberOfLines = 22; // Set appropriate number of lines for JS
             document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-js1');
             document.body.style.backgroundImage = "url('img/vue.svg')";
+            document.body.style.backgroundAttachment = "fixed";
             document.body.style.backgroundSize = "100px";
             document.body.style.backgroundRepeat = "no-repeat";
             document.body.style.backgroundPosition = "10px 70px";
@@ -208,8 +216,9 @@
             numberOfLines = 4; // Set appropriate number of lines for Laravel
             document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-laravel');
             document.body.style.backgroundImage = "url('img/laravel.svg')";
-            document.body.style.backgroundSize = "100px";
+            document.body.style.backgroundAttachment = "fixed";
             document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "170px";
             document.body.style.backgroundPosition = "10px 70px";
             updateEpisodesList(numberOfLines, contents);
             setActiveButton(laravel);

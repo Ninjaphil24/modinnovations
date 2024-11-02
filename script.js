@@ -17,7 +17,8 @@ export function updateEpisodesList(numberOfLines, contents) {
         item.style.transition = 'height 0.3s';
         item.style.height = '50px'; // Set initial height
 
-        item.addEventListener('click', () => {
+        item.addEventListener('click', (event) => {
+            event.stopPropagation(); // Prevent click from propagating to document
             if (currentExpandedItem && currentExpandedItem !== item) {
                 currentExpandedItem.style.height = '50px'; // Reset previous expanded item
                 currentExpandedItem.querySelector('.content').remove(); // Remove previous content
@@ -58,16 +59,31 @@ export function updateEpisodesList(numberOfLines, contents) {
 
         // Add hover effect using JavaScript
         item.addEventListener('mouseover', () => {
+            item.style.transition = 'all 0.4s';
+            item.style.transform = 'scale(1.2)';
             item.style.backgroundColor = 'var(--color-hover)';
-            item.style.transition = '0.4s';
             item.style.color = 'var(--color-white)';
             item.style.cursor = 'pointer';
+            item.style.zIndex = '10'; // Ensure it stays above other elements
         });
 
         item.addEventListener('mouseout', () => {
+            item.style.transform = 'scale(1)';
             item.style.backgroundColor = 'var(--color-logodark)';
             item.style.color = 'var(--color-logolight)';
+            item.style.zIndex = '1'; // Reset z-index
         });
+    });
+
+    // Close the expanded episode box when clicking outside
+    document.addEventListener('click', (event) => {
+        if (currentExpandedItem && !currentExpandedItem.contains(event.target)) {
+            currentExpandedItem.style.height = '50px'; // Reset height
+            currentExpandedItem.querySelector('.content').remove(); // Remove content
+            currentExpandedItem.querySelector('.episode-title').style.display = 'block'; // Show the title again
+            currentExpandedItem.classList.remove('active'); // Remove active class
+            currentExpandedItem = null;
+        }
     });
 }
 
