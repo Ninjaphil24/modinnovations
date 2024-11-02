@@ -99,15 +99,14 @@ Review of all steps
 Git Commit
 Error Handling->try (throw new Exception) catch
 Creating an error log
-.gitignore and commit
-Links Current Commit:  https://github.com/Ninjaphil24/mvctut/tree/e28e0983c3af7ec52d1f55abe74017ca6c6d7d21`,
+.gitignore and commit`,
 
-    `<a href="" target="_blank">Go to Episode 5</a>
+    `<a href = "" target = "_blank" > Go to Episode 5</a>
     Episode 5
 Intro
 Create Migration
-Running Migration (Fails)
-Running Migration (Success - multi_query)
+Running Migration(Fails)
+Running Migration(Success - multi_query)
 SQL injection intro
 SQL injection setup
 SQL injection demonstration
@@ -115,7 +114,7 @@ SQL injection security in php docs
 Prepare, Bind_Param, Execute!
 Demonstration of safety`,
 
-    `<a href="" target="_blank">Go to Episode 6</a>
+    `<a href = "" target = "_blank" > Go to Episode 6</a>
     Episode 6
 Intro
 Unique Email Key
@@ -124,16 +123,16 @@ Install phpMyAdmin
 Access mySQL via PMA
 Error Code Access
 Success if statement
-mysql_stmt->error docs
+mysql_stmt -> error docs
 Create Error Message
 Scope Errors
 Handling multiple errors
 MySQL "doesn't equal" operator
 Wrong error demo
-mysql_stmt->errno
+mysql_stmt -> errno
 Error code working`,
 
-    `<a href="" target="_blank">Go to Episode 7</a>
+    `<a href = "" target = "_blank" > Go to Episode 7</a>
     Episode 7
 Intro
 Intro to Unit Testing
@@ -142,24 +141,24 @@ Run 1st test
 Create 2nd test
 Create form test`,
 
-    `<a href="" target="_blank">Go to Episode 8</a>
+    `<a href = "" target = "_blank" > Go to Episode 8</a>
     Episode 8
-Intro - Why MVC?
-Separate Connection file and env vars
-What is MVC?
-Splitting files into MVC 1. Model
+Intro - Why MVC ?
+    Separate Connection file and env vars
+What is MVC ?
+    Splitting files into MVC 1. Model
 2. Controller
 3. View
 PHP Unit testing`,
 
-    `<a href="" target="_blank">Go to Episode 9</a>
+    `<a href = "" target = "_blank" > Go to Episode 9</a>
     Episode 9
 Intro to Routing
 Step 1:  Associative Arrays
 Step 2:  Super Globals
 Explanation of above
 Debugging session demo
-Returning to index (entry point)
+Returning to index(entry point)
 Optimize debug messages
 Explanation of Router v1
 Controller v2
@@ -168,7 +167,7 @@ MVC v1: Create Laravel type folder stucture
 Explanation of Routing
 Optimize Routing`,
 
-    `<a href="" target="_blank">Go to Episode 10</a>
+    `<a href = "" target = "_blank" > Go to Episode 10</a>
     Episode 10
 Intro to scope error
 Create git branch and using "global" keyword
@@ -185,12 +184,12 @@ Example of switch statement and optimize code
 Further optimization ternary vs switch
 Move logic from view to controller`,
 
-    `<a href="" target="_blank">Go to Episode 11</a>
+    `<a href = "" target = "_blank" > Go to Episode 11</a>
     Episode 11
 Intro
 Optimize Model
 Further Unit Tests Intro
-1st new test: Submission 
+1st new test: Submission
 2nd test:  Duplicate email error 1062
 3rd test:  Empty email field 3819
 Failing a test consequences
@@ -202,7 +201,7 @@ Mock methods in practice
 Explanation of bind_param and execute
 Test friendly coding`,
 
-    `<a href="" target="_blank">Go to Episode 12</a>
+    `<a href = "" target = "_blank" > Go to Episode 12</a>
     Episode 12
 Intro
 Refactoring from episode 11
@@ -212,12 +211,12 @@ VS Code git extensions and current status of git
 Explanation of duplicate code issue
 Refactor duplicate code
 Explanation of Exception class
-Parameter by reference vs by value
+    Parameter by reference vs by value
 Refactor else if and debug
 Recap
 Remove parameter by reference`,
 
-    `<a href="" target="_blank">Go to Episode 13</a>
+    `<a href = "" target = "_blank" > Go to Episode 13</a>
     Episode 13
 Intro
 Associative Array for Router
@@ -227,7 +226,7 @@ Create Router folder and file
 Import Router to entry point
 Error Handling for Router Class`,
 
-    `<a href="" target="_blank">Go to Episode 14</a>
+    `<a href = "" target = "_blank" > Go to Episode 14</a>
     Episode 14
 Intro
 Convert if/else to try/catch
@@ -235,7 +234,7 @@ Refactor for testIndexOutput
 Router Test
 Create tests for errors`,
 
-    `<a href="" target="_blank">Go to Episode 15</a>
+    `<a href = "" target = "_blank" > Go to Episode 15</a>
     Episode 15
 Intro
 Demo of fetch_assoc in interactive shell
@@ -243,8 +242,8 @@ Explanation of data_seek
 Demo of fetch_all in interactive shell
 Explanation of traverse
 Demo of using foreach loop directly in interactive shell
-Using it in the code.  Step 1:  Model
-Step 2:  Controller
+Using it in the code.Step 1: Model
+Step 2: Controller
 Step 3:  View and Router errors
 Router refactor explantion
 Router refactor
@@ -253,7 +252,7 @@ Create mock for internal functionality tests
 Use callback in test
 Outro`,
 
-    `<a href="" target="_blank">Go to Episode 16</a>
+    `<a href = "" target = "_blank" > Go to Episode 16</a>
     Episode 16
 Intro
 Small refactor of tests
@@ -261,12 +260,12 @@ Refactor public to protected with trait
 Further separation of tests for clarity
 Create Interface
 Add table html for list.php
-Add button for a-tag to list`,
+Add button for a - tag to list`,
 
-    `<a href="" target="_blank">Go to Episode 17</a>
+    `<a href = "" target = "_blank" > Go to Episode 17</a>
     Episode 17
 Intro
-Try/Catch for ListModel
+Try / Catch for ListModel
 Create single entry functionality with query params
 Explanation of $_GET[]
 Using the same view for single and multiple
@@ -278,7 +277,7 @@ Call list with fetch_assoc using while loop
 
 Link to button site & link to github css for button`,
 
-    `<a href="" target="_blank">Go to Episode 18</a>
+    `<a href = "" target = "_blank" > Go to Episode 18</a>
     Episode 18
 Intro
 Optimize debugging statements
@@ -303,7 +302,7 @@ Test using find_all method
 Explaining end() in interactive shell
 Application of end() in test`,
 
-    `<a href="" target="_blank">Go to Episode 19</a>
+    `<a href = "" target = "_blank" > Go to Episode 19</a>
     Episode 19
 Intro
 Refactor db id numbering in tests
@@ -315,7 +314,7 @@ Debugging
 Solution to bug
 Outro`,
 
-    `<a href="" target="_blank">Go to Episode 20</a>
+    `<a href = "" target = "_blank" > Go to Episode 20</a>
     Episode 20
 Intro
 PHP methods in Interactive Shell: foreach
@@ -323,9 +322,9 @@ Nested Array
 Example of a Route
 array_map
 array_filter
-Quick intro to Bitwise operators 
+Quick intro to Bitwise operators
 reduce
-preg_match 
+preg_match
 string_replace
 array_shift
 spread operator
@@ -333,14 +332,14 @@ Outro
 
 Links for regular expressions`,
 
-    `<a href="" target="_blank">Go to Episode 21</a>
+    `<a href = "" target = "_blank" > Go to Episode 21</a>
     Episode 21
 Intro and review of router
 Add debug statements
 Review with debug statements of how router works
 Query String limitations vs Wildcard
 New Branch for Wildcard and debug statements
-In ListModel use query instead of prepare/bind_param/execute
+In ListModel use query instead of prepare / bind_param / execute
 Create controller method for wildcard
 Adjust view for wildcard
 RouterSetup add one line
@@ -363,17 +362,17 @@ Outro
 
 Links for regular expressions`,
 
-    `<a href="" target="_blank">Go to Episode 22</a>
+    `<a href = "" target = "_blank" > Go to Episode 22</a>
     Episode 22
 Intro and review of router
 Exceptions
-Unit tests for router review (no new test)
+Unit tests for router review(no new test)
 :id instead of capture group with str_replace
 Create test for array_shift
 Refactor to test friendly code
 Finish wildcard test`,
 
-    `<a href="" target="_blank">Go to Episode 23</a>
+    `<a href = "" target = "_blank" > Go to Episode 23</a>
     Episode 23
 Intro & test refactoring
 Refactor router for sql error exception
@@ -388,7 +387,7 @@ Avoid global vars for test friendly code
 
 Look at mistakes and find where they are made`,
 
-    `<a href="" target="_blank">Go to Episode 23B</a>
+    `<a href = "" target = "_blank" > Go to Episode 23B</a>
     Episode 23B
 Intro
 Refactor to correct mistakes
@@ -397,7 +396,7 @@ Logging
 At long last, the reason
 Outro`,
 
-    `<a href="" target="_blank">Go to Episode 24</a>
+    `<a href = "" target = "_blank" > Go to Episode 24</a>
     Episode 24
 Intro
 Javascript structure:  Prototype chain
@@ -409,11 +408,11 @@ MDN Docs
 Web API hierarchy
 Recap`,
 
-    `<a href="" target="_blank">Go to Episode 25</a>
+    `<a href = "" target = "_blank" > Go to Episode 25</a>
     Episode 25
 Intro: Explanation of full page load
 Explanation of Ajax: partial page load
-PHP & HTML/CSS setup for Ajax
+PHP & HTML / CSS setup for Ajax
 What is json
 Loops with ajax
 json_encode
@@ -427,12 +426,12 @@ Response text
 json parse
 Output Buffer
 header for readability
-Solution to errors:  exit & onload
+Solution to errors: exit & onload
 Inject json into DOM
 Create single user button
 Outro`,
 
-    `<a href="" target="_blank">Go to Episode 26</a>
+    `<a href = "" target = "_blank" > Go to Episode 26</a>
     Episode 26
 Intro
 Create php function for single user ajax
@@ -440,11 +439,11 @@ URI placement & philosophy of code
 The event object
 Isolating event listeners
 Writing single user function
-Ajax functioning, minor corrections
+    Ajax functioning, minor corrections
 Make anonymous functions callable
 Recap`,
 
-    `<a href="" target="_blank">Go to Episode 27</a>
+    `<a href = "" target = "_blank" > Go to Episode 27</a>
     Episode 27
 Intro
 Ajax with query string
@@ -455,14 +454,14 @@ Arrow function characteristics
 Fetch API syntax and implementation
 Outro`,
 
-    `<a href="" target="_blank">Go to Episode 28</a>
+    `<a href = "" target = "_blank" > Go to Episode 28</a>
     Episode 28
 Intro:  Duplicate code problem
 Create Components and refactor PHP
 const, let and var
-Create Modular Components and refactor Ajax
+    Create Modular Components and refactor Ajax
 Array functions in js
-HTMLCollection = Object with array-like behavior
+HTMLCollection = Object with array - like behavior
 Refactor onclick for modular js
 Array.from
 Refactor continued
@@ -472,14 +471,14 @@ Add switch for different buttons
 Final component creation for ajax
 Outro`,
 
-    `<a href="" target="_blank">Go to Episode 29</a>
+    `<a href = "" target = "_blank" > Go to Episode 29</a>
     Episode 29
 Intro
 Demo of local storage
 Create local storage options
 PHP cookies`,
 
-    `<a href="" target="_blank">Go to Episode 30</a>
+    `<a href = "" target = "_blank" > Go to Episode 30</a>
     Episode 30
 Intro
 Corrections to background color options
@@ -491,11 +490,11 @@ Function reference
 Middleware and Doc Comments continued
 Middleware recap`,
 
-    `<a href="" target="_blank">Go to Episode 31</a>
+    `<a href = "" target = "_blank" > Go to Episode 31</a>
     Episode 31
 Intro
-async/await
-API 1.file_get_contents
+async / await
+    API 1.file_get_contents
 2. Example of actual local API: PHP to Ajax
 json_decode
 stdClass
@@ -504,7 +503,7 @@ curl
 Push Notifications Step 1: ngrok
 Push Notifications Step 2: onesignal`,
 
-    `<a href="" target="_blank">Go to Episode 32</a>
+    `<a href = "" target = "_blank" > Go to Episode 32</a>
     Episode 32
 Intro to vendor folder and packaging
 Preparation 
@@ -519,14 +518,14 @@ Refactor for css
 PHP cannot refactor for Ajax demo
 Packaging js Step 1: Install node.js
 npm init and package.json in original folder
-Install Laravel Mix (instead of webpack)
+Install Laravel Mix(instead of webpack)
 Js packaging complete and debugging
-`
+    `
 ];
 
 export const contentsJS = [
-    `<a href="" target="_blank">Go to Episode 1</a>
-Intro 
+    `<a href = "" target = "_blank" > Go to Episode 1</a>
+    Intro 
 Create basic website with boilerplate and href
 Full page reload demo
 Single Page App theory
@@ -537,31 +536,31 @@ SPA file structure
 Create main.js
 Outro`,
 
-    `<a href="" target="_blank">Go to Episode 2</a>
-Organize folder
+    `<a href = "" target = "_blank" > Go to Episode 2</a>
+    Organize folder
 Install vue.js
-Vue app ready/comparison of vue app and js app
+Vue app ready / comparison of vue app and js app
 Refactor vanilla js to look like vue.js
 Create router folder structure in vanilla js
 Correct index.html placement
 Refactor router for new folder structure
 Refactor router if statement to proper routing`,
 
-    `<a href="" target="_blank">Go to Episode 3</a>
-Refactoring for #
+    `<a href = "" target = "_blank" > Go to Episode 3</a>
+    Refactoring for #
 Intro to Web Components & Shadow DOM
-Create custom html tags router-view
-Create custom tag router-link + attributes
-Create hello-world custom tag
+Create custom html tags router - view
+Create custom tag router - link + attributes
+Create hello - world custom tag
 Outro`,
 
-    `<a href="" target="_blank">Go to Episode 4</a>
-Ep 3 recap and correct repeat code
+    `<a href = "" target = "_blank" > Go to Episode 4</a>
+    Ep 3 recap and correct repeat code
 The template tag theory
 Using template tag and document fragment`,
 
-    `<a href="" target="_blank">Go to Episode 5</a>
-Playground commit
+    `<a href = "" target = "_blank" > Go to Episode 5</a>
+    Playground commit
 Clarification of HTMLElement
 Clarification of template tag
 Refactor vanilla js to resemble vue.js more closely
@@ -570,22 +569,22 @@ Explanation of scoped style vs shadow DOM
 Refactoring all components
 Template for App.js`,
 
-    `<a href="" target="_blank">Go to Episode 6</a>
-First look at Vue.js starter code.  Counter, store & state management
+    `<a href = "" target = "_blank" > Go to Episode 6</a>
+    First look at Vue.js starter code.Counter, store & state management
 First look at computed
 Recreating vue features in vanilla js
 Functions returning objects
 Getter function
-First steps for store in vanilla js
+    First steps for store in vanilla js
 Create ref, computed and defineStore functions
 Create store in vanilla js
 Refactor home & about to use template tag
 Refactor to use memory instead of parsing in the DOM
 Complete counter in vanilla js`,
 
-    `<a href="" target="_blank">Go to Episode 7</a>
-Recap of Episode 6 and refactor all template tags to memory
-Create Options/Composition API switch in vue app
+    `<a href = "" target = "_blank" > Go to Episode 7</a>
+    Recap of Episode 6 and refactor all template tags to memory
+Create Options / Composition API switch in vue app
 Apply API toggle to HomeView & real life example of computed
 Apply API toggle to AboutView and outro`,
 

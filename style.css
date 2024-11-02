@@ -27,30 +27,47 @@ body {
     transition: 2s;
 }
 
-.classes {
-    --color-bg: #cd945a;
+/* Style nav tag to place logo on the right, buttons on the left.  Use root colorscheme and style buttons as below */
+nav {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--color-bgsecondary);
+    color: var(--color-white);
 }
 
-.php {
-    width: 100%;
-    height: 100%;
-    --color-bg: #777BB4;
-    background-image: url('img/php.svg');
-    /* background-repeat: repeat; */
-    background-size: 100px;
-    transition: 2s;
+.nav-links {
+    display: flex;
+    justify-content: left;
+    width: 30%;
+    list-style-type: none;
 }
 
-.js {
-    --color-bg: #42B883;
-    background-image: url('img/vue.svg');
-    /* background-repeat: repeat; */
-    background-size: 100px;
-    transition: 2s;
+.nav-links button {
+    border-radius: 10px;
+    background-color: var(--color-logodark);
+    color: var(--color-logolight);
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+    outline: 1px solid var(--color-logolight);
+}
+
+.nav-links button:hover {
+    background-color: var(--color-logolight);
+    color: var(--color-logodark);
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 
+nav .logo img {
+    height: 100px;
+}
 
+/* Courstes Navbar Start */
 .container {
     display: flex;
     margin: 10px;
@@ -81,6 +98,8 @@ body {
     background-color: var(--color-logolight);
     color: var(--color-logodark);
     transition: 0.5s;
+    cursor: pointer;
+    ;
 }
 
 .navbar button.active {
@@ -88,8 +107,200 @@ body {
     color: var(--color-logodark);
 }
 
-/* Make .episodes scroll independently of the back ground */
+/* Courses Navbar end */
+
+/* Home start */
+.presentation {
+    display: flex;
+    justify-content: center;
+}
+
+.home,
+.about {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: var(--color-bg);
+    color: var(--color-white);
+}
+
+/* Home end */
+
+/* Contact Start */
+
+.formContainer {
+    position: fixed;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #072a53;
+    padding: 10px;
+}
+
+.inactive {
+    display: none;
+}
+
+#form {
+    flex-direction: column;
+    max-width: 600px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+#form h3 {
+    color: #D8C278;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#form #getintouch {
+    border: none;
+    text-decoration: none;
+    width: 200px;
+    font-family: 'MBFCannoRegular', sans-serif;
+    font-size: 17px;
+    color: #D8C278;
+    padding: 15px;
+    background-color: #57789D;
+    align-self: center;
+}
+
+#form #getintouch:hover {
+    cursor: pointer;
+    background-color: #D8C278;
+    border: 1px solid #D8C278;
+    color: #57789D;
+}
+
+#form hr {
+    background-color: #D8C278;
+}
+
+#form ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#form ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#form ul li input {
+    border: none;
+    opacity: 0.8;
+    height: 37px;
+    width: 100%;
+    color: #d1f3f5;
+    background-color: rgb(76, 148, 242);
+}
+
+.error {
+    border: 1px solid red;
+}
+
+#error {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+#form ul li input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #d1f3f5;
+    opacity: 1;
+    /* Firefox */
+    padding: 10px;
+}
+
+#form ul li input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #d1f3f5;
+}
+
+#form ul li input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #d1f3f5;
+}
+
+#form ul li textarea {
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 150px;
+    width: 100%;
+    color: #d1f3f5;
+    background: rgb(76, 148, 242);
+}
+
+#form ul li textarea::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #d1f3f5;
+    opacity: 1;
+    /* Firefox */
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+#form ul li textarea::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #d1f3f5;
+}
+
+#form ul li textarea:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #d1f3f5;
+}
+
+.thankYouContainer {
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    color: #D8C278;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #072a53;
+    padding: 10px;
+}
+
+#thankYouClose,
+#contactClose {
+    border: none;
+    text-decoration: none;
+    width: 200px;
+    font-family: 'MBFCannoRegular', sans-serif;
+    font-size: 17px;
+    color: #D8C278;
+    padding: 15px;
+    margin: 15px;
+    background-color: #57789D;
+    cursor: pointer;
+    align-self: center;
+}
+
+#thankYouClose:hover,
+#contactClose:hover {
+    background-color: #D8C278;
+    border: 1px solid #D8C278;
+    color: #57789D;
+}
+
+/* Contact End */
+
+/* Episodes Section Start */
 .episodes {
+    display: none;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -133,3 +344,13 @@ body {
     color: var(--color-logodark);
     transition: 0.5s;
 }
+
+#classes img,
+#php img,
+#js img,
+#laravel img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Episodes End */

@@ -5,17 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>ModInstructional</title>
+    <!-- Import LogoFlat.png as favicon-->
+    <link rel="icon" href="./img/LogoFlat.png" type="image/png">
+    <title>Modinstructional</title>
 </head>
 
 <body>
-    <!-- add svg from img folder -->
+    <!-- Create nav with logo on the right and three buttons with button tags on the left: Home, About, contact -->
+    <nav>
+        <ul class="nav-links">
+            <li><button id="home">Home</button></li>
+            <li><button id="about">About</button></li>
+            <li><button id="contact">Contact</button></li>
+        </ul>
+        <div class="logo">
+            <img src="./img/LogoFlat.svg" alt="Modinnovations">
+        </div>
+    </nav>
+
+
+    <div class="presentation">
+        <div class="home">
+            <h1>Modinstructional</h1>
+            <p>Modinstructional is a platform for learning programming languages and frameworks</p>
+        </div>
+
+        <div class="about">
+            <h1>How to use this tutorial</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo corporis laudantium quia? Eligendi
+                assumenda
+                nisi veniam corrupti, incidunt debitis provident autem unde neque suscipit cupiditate. Provident quos
+                nemo
+                beatae similique.</p>
+        </div>
+
+        <div class="contact">
+            <div class="formContainer inactive">
+
+                <form id="form" class="flex" action="https://formspree.io/f/xoqrjvve" method="post">
+                    <h3>CONTACT</h3>
+                    <ul>
+                        <li>
+                            <input type="text" id="name" name="user_name" placeholder="Full name:" required
+                                maxlength="50">
+                            <div>
+                                <hr>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="email" id="mail" name="user_email" placeholder="E-mail address:" required
+                                maxlength="50">
+                            <small id="error"></small>
+                            <div>
+                                <hr>
+                            </div>
+                        </li>
+                        <li>
+                            <textarea id="msg" name="user_message" placeholder="Enter text here" required
+                                maxlength="1000"></textarea>
+                        </li>
+                    </ul>
+                    <button id="getintouch" type="submit" name="submit" value="Get in touch">SEND MESSAGE</button>
+                    <button id="contactClose">CLOSE</button>
+                </form>
+            </div>
+            <div class="thankYouContainer inactive flex">
+                <h3>THANK YOU, YOUR MESSAGE HAS BEEN RECEIVED.</h3>
+                <button id="thankYouClose">CLOSE</button>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="navbar">
-            <button id="classes">classes</button>
-            <button id="php">php/mvc</button>
-            <button id="js">vue.js/js</button>
-            <button id="laravel">laravel/quasar</button>
+            <button id="classes"><img src="./img/classes.svg" alt="Classes"></button>
+            <button id="php"><img src="./img/php.svg" alt="Php"></button>
+            <button id="js"><img src="./img/vue.svg" alt="Vue.js/js"></button>
+            <button id="laravel"><img src="./img/laravel.svg" alt="Laravel"></button>
         </div>
     </div>
 
@@ -25,95 +91,75 @@
 
     <script type="module">
         import { contentsClass, contentsPHP, contentsJS, contentsLaravel } from "./conents.js";
+        import { updateEpisodesList, setActiveButton } from "./script.js";
 
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-bg');
+            document.querySelector('.presentation').style.display = 'flex';
+            document.querySelector('.home').style.display = 'flex';
+            document.querySelector('.about').style.display = 'none';
+            document.body.style.backgroundImage = "none";
+        });
+        // Presentation Start
+        let home = document.getElementById('home');
+        let about = document.getElementById('about');
+
+        home.addEventListener('click', () => {
+            document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-bg');
+            document.querySelector('.episodes').style.display = 'none';
+            document.querySelector('.presentation').style.display = 'flex';
+            document.querySelector('.home').style.display = 'flex';
+            document.querySelector('.about').style.display = 'none';
+            document.body.style.backgroundImage = "none";
+            setActiveButton(home);
+        });
+
+        about.addEventListener('click', () => {
+            document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-bg');
+            document.querySelector('.episodes').style.display = 'none';
+            document.querySelector('.presentation').style.display = 'flex';
+            document.querySelector('.about').style.display = 'flex';
+            document.querySelector('.home').style.display = 'none';
+            document.body.style.backgroundImage = "none";
+            setActiveButton(about);
+        });
+        // Presentation End
+
+        // Contact Start
+        document.getElementById('contact').addEventListener('click', function () {
+            document.querySelector('.formContainer').classList.toggle('inactive');
+        });
+
+        document.getElementById('contactClose').addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the default button action
+            document.querySelector('.formContainer').classList.toggle('inactive');
+        });
+
+        document.getElementById('thankYouClose').addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the default button action
+            document.querySelector('.thankYouContainer').classList.toggle('inactive');
+        });
+
+        document.getElementById('form').addEventListener('submit', async function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const form = event.target;
+            const formData = new FormData(form);
+            // Add your form submission logic here
+
+            // Show thank you message and hide form
+            document.querySelector('.formContainer').classList.add('inactive');
+            document.querySelector('.thankYouContainer').classList.remove('inactive');
+        });
+        // Contact End
+
+        // Episodes Start
         let contents;
         let numberOfLines;
-
         let classes = document.getElementById('classes');
         let php = document.getElementById('php');
         let js = document.getElementById('js');
         let laravel = document.getElementById('laravel');
-
-        function updateEpisodesList() {
-            const episodesArray = Array.from({ length: numberOfLines }, (_, i) => `Episode ${i + 1}`);
-            const episodesList = document.querySelector('.episodes ul');
-            episodesList.innerHTML = ''; // Clear existing list
-
-            for (const [index, episode] of episodesArray.entries()) {
-                const li = document.createElement('li');
-                li.textContent = episode;
-                li.dataset.index = index; // Store the index in a data attribute
-                episodesList.appendChild(li);
-            }
-
-            // Open and close episode bar
-            let currentExpandedItem = null;
-
-            document.querySelectorAll('.episodes ul li').forEach(item => {
-                item.style.transition = 'height 0.3s';
-                item.style.height = '50px'; // Set initial height
-
-                item.addEventListener('click', () => {
-                    if (currentExpandedItem && currentExpandedItem !== item) {
-                        currentExpandedItem.style.height = '50px'; // Reset previous expanded item
-                        currentExpandedItem.querySelector('.content').remove(); // Remove previous content
-                        currentExpandedItem.querySelector('.episode-title').style.display = 'block'; // Show the title again
-                    }
-                    if (item.querySelector('.content')) {
-                        item.querySelector('.content').remove(); // Remove content
-                        item.querySelector('.episode-title').style.display = 'block'; // Show the title again
-                        item.style.height = '50px'; // Reset height
-                        item.classList.remove('active'); // Remove active class
-                    } else {
-                        const contentDiv = document.createElement('div');
-                        contentDiv.classList.add('content');
-                        contentDiv.innerHTML = contents[item.dataset.index].replace(/(\d{2}:\d{2} - )?/g, '').replace(/\n/g, '<br>');
-                        item.querySelector('.episode-title').style.display = 'none'; // Hide the title
-                        item.appendChild(contentDiv);
-                        item.style.height = `${contentDiv.scrollHeight + 50}px`; // Set height to content height + initial height
-                        item.classList.add('active'); // Add active class
-
-                        // Wait for the height transition to complete before showing the content
-                        item.addEventListener('transitionend', function showContent(event) {
-                            if (event.propertyName === 'height') {
-                                contentDiv.style.display = 'block';
-                                item.removeEventListener('transitionend', showContent);
-                            }
-                        });
-                        contentDiv.style.display = 'none'; // Initially hide the content
-                    }
-                    currentExpandedItem = item.querySelector('.content') ? item : null;
-                });
-
-                // Wrap the episode title in a span for easier manipulation
-                const titleSpan = document.createElement('span');
-                titleSpan.classList.add('episode-title');
-                titleSpan.textContent = item.textContent;
-                item.textContent = '';
-                item.appendChild(titleSpan);
-
-                // Add hover effect using JavaScript
-                item.addEventListener('mouseover', () => {
-                    item.style.backgroundColor = 'var(--color-hover)';
-                    item.style.transition = '0.4s';
-                    item.style.color = 'var(--color-white)';
-                    item.style.cursor = 'pointer';
-                });
-
-                item.addEventListener('mouseout', () => {
-                    item.style.backgroundColor = 'var(--color-logodark)';
-                    item.style.color = 'var(--color-logolight)';
-                });
-            });
-        }
-
-        function setActiveButton(button) {
-            document.querySelectorAll('.navbar button').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            button.classList.add('active');
-        }
-
 
         classes.addEventListener('click', () => {
             contents = contentsClass;
@@ -122,12 +168,11 @@
             document.body.style.backgroundImage = "url('img/classes.svg')";
             document.body.style.backgroundSize = "100px";
             document.body.style.backgroundRepeat = "no-repeat";
-            updateEpisodesList();
+            document.body.style.backgroundPosition = "10px 70px";
+            updateEpisodesList(numberOfLines, contents);
             setActiveButton(classes);
-        });
-
-        document.addEventListener('DOMContentLoaded', () => {
-            document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-bg');
+            document.querySelector('.episodes').style.display = 'flex';
+            document.querySelector('.presentation').style.display = 'none';
         });
 
         php.addEventListener('click', () => {
@@ -137,9 +182,11 @@
             document.body.style.backgroundImage = "url('img/php.svg')";
             document.body.style.backgroundSize = "100px";
             document.body.style.backgroundRepeat = "no-repeat";
-            // document.body.style.opacity = "0.5";
-            updateEpisodesList();
+            document.body.style.backgroundPosition = "10px 70px";
+            updateEpisodesList(numberOfLines, contents);
             setActiveButton(php);
+            document.querySelector('.episodes').style.display = 'flex';
+            document.querySelector('.presentation').style.display = 'none';
         });
 
         js.addEventListener('click', () => {
@@ -149,9 +196,11 @@
             document.body.style.backgroundImage = "url('img/vue.svg')";
             document.body.style.backgroundSize = "100px";
             document.body.style.backgroundRepeat = "no-repeat";
-            // document.body.style.opacity = "0.5";
-            updateEpisodesList();
+            document.body.style.backgroundPosition = "10px 70px";
+            updateEpisodesList(numberOfLines, contents);
             setActiveButton(js);
+            document.querySelector('.episodes').style.display = 'flex';
+            document.querySelector('.presentation').style.display = 'none';
         });
 
         laravel.addEventListener('click', () => {
@@ -161,11 +210,13 @@
             document.body.style.backgroundImage = "url('img/laravel.svg')";
             document.body.style.backgroundSize = "100px";
             document.body.style.backgroundRepeat = "no-repeat";
-            // document.body.style.opacity = "0.5";
-            updateEpisodesList();
+            document.body.style.backgroundPosition = "10px 70px";
+            updateEpisodesList(numberOfLines, contents);
             setActiveButton(laravel);
+            document.querySelector('.episodes').style.display = 'flex';
+            document.querySelector('.presentation').style.display = 'none';
         });
-
+        // Episodes End
     </script>
 </body>
 
