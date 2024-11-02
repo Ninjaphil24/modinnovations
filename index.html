@@ -33,26 +33,30 @@
                 <h3>3. Front-End Demystified: A Deep Dive into Vue.js</h3>
                 <h3>4. Full stack, with CI/CD and chatGPT</h3> <br><br>
             </div>
-            The tutorial series contained on this platform has been the result of 2 years of research by it's creator,
-            Philip Modinos. The main focus of the tutorials is a deep dive in concepts surrounding the practices of
-            frameworks like laravel and vue.js. <br>
-            The greatest problem that aspiring web developers face in their search for knowledge is the lack of
-            context. This tutorial series aims to provide that context by providing a step by step guide to the
-            creation of a full stack application. <br>
+            The tutorial series contained on this platform has been the result of 2 years of research by it's
+            creator,Philip Modinos. The main focus of the tutorials is a deep dive in concepts surrounding the practices
+            of frameworks like laravel and vue.js. <br>
+            The greatest problem that aspiring web developers face in their search for knowledge is the lack of context.
+            This tutorial series aims to provide that context by providing a step by step guide to the creation of a
+            full stack application. <br>
             The final part of the tutorial leverages all the knowledge accumulated from the previous parts to
-            demonstrate how with the guidance of AI alongside the presets of laravel and vue.js, a developer can
-            create a web application that's ready to go in a few hours, always demonstrating the process in it's
-            full context. <br>
-            Click any of the icons below to get started, or click the about button to learn more about how the
-            tutorial is structured. <br>
+            demonstrate how with the guidance of AI alongside the presets of laravel and vue.js, a developer can create
+            a web application that's ready to go in a few hours, always demonstrating the process in it's full context.
+            <br>
+            Click any of the icons below to get started, or click the about button to learn more about how the tutorial
+            is structured. <br>
             </p>
         </div>
 
         <div class="about">
-            <h1>How to use this tutorial:</h1><br>
+            <h2>Who is this tutorial for?</h2><br>
+            <p>If you are a complete beginner this tutorial is not for you. It does not cover the absolute basics, like
+                data types, loops, operators etc. It is essential that you have some familiarity with these concepts if
+                you wish to be able to follow this tutorial. </p> <br><br>
+            <h2>How to use this tutorial:</h2><br>
             <p>
-                The tutorial is structured in 4 parts, each part is a series of video tutorials. Click on one of the
-                icons below and you will be taken to that category. Each category has a list of episodes, click on an
+                The tutorial is structured in 4 parts, each part is a series of video tutorials. Click on one of
+                theicons below and you will be taken to that category. Each category has a list of episodes, click on an
                 episode to view the video. The episodes are structured in a way that you can follow along with the video
                 and code along with the instructor. The code for the first category - Classes in PHP is not available on
                 github, as this is a tutorial about concepts and there is no code to retain. The code for the other
@@ -286,6 +290,34 @@
             });
 
         });
+
+        // localStorage start
+
+        let episodesList = document.querySelector('.episodes ul');
+
+        // Create a mutation observer to observe if the li appears
+        const observer = new MutationObserver((mutationsList, observer) => {
+            for (let mutation of mutationsList) {
+                if (mutation.type === 'childList') {
+                    mutation.addedNodes.forEach(node => {
+                        if (node.nodeName === 'LI') {
+                            let content = node.querySelector('.content a')
+                            // console.log(content);
+                            // .addEventListener('click', (event) => {
+                            //     event.preventDefault();
+                            //     console.log(node.getAttribute('data-index'));
+                            // });
+
+                        }
+                    });
+                }
+            }
+        });
+
+        // Start observing the target node for configured mutations
+        observer.observe(episodesList, { childList: true });
+
+        // locoalStorage end
         // Episodes End
     </script>
 </body>
