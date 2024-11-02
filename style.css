@@ -7,9 +7,12 @@
     --color-logodark: #1167b9;
     --color-classes: #cd945a;
     --color-php: #777BB4;
+    --color-php2: #4F5B93;
     --color-js1: #42B883;
     --color-js2: #35495E;
     --color-laravel: #1A1A1A;
+    --color-laragray: #F3F4F6;
+    --color-larared: #911a13;
 }
 
 * {
@@ -72,9 +75,8 @@ nav .logo img {
 /* Courses Navbar Start */
 .container {
     display: flex;
-    margin: 10px;
+    margin-top: 70px;
     justify-content: center;
-    padding-top: 60px;
     width: 100%;
 }
 
@@ -123,8 +125,18 @@ button#laravel img {
 
 /* Home start */
 .presentation {
+    margin-top: 70px;
     display: flex;
     justify-content: center;
+}
+
+.titles {
+    /* Align children left */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 60vh;
 }
 
 .home,
@@ -150,6 +162,7 @@ button#laravel img {
     transform: translate(-50%, -50%);
     background-color: #072a53;
     padding: 10px;
+    z-index: 10;
 }
 
 .inactive {

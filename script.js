@@ -1,5 +1,5 @@
-export function updateEpisodesList(numberOfLines, contents) {
-    const episodesArray = Array.from({ length: numberOfLines }, (_, i) => `Episode ${i + 1}`);
+export function updateEpisodesList(numberOfLines, contents, titleVar) {
+    const episodesArray = Array.from({ length: numberOfLines }, (_, i) => i == 0 ? titleVar : `Episode ${i}`);
     const episodesList = document.querySelector('.episodes ul');
     episodesList.innerHTML = ''; // Clear existing list
 
@@ -61,16 +61,12 @@ export function updateEpisodesList(numberOfLines, contents) {
         item.addEventListener('mouseover', () => {
             item.style.transition = 'all 0.4s';
             item.style.transform = 'scale(1.2)';
-            item.style.backgroundColor = 'var(--color-hover)';
-            item.style.color = 'var(--color-white)';
             item.style.cursor = 'pointer';
             item.style.zIndex = '10'; // Ensure it stays above other elements
         });
 
         item.addEventListener('mouseout', () => {
             item.style.transform = 'scale(1)';
-            item.style.backgroundColor = 'var(--color-logodark)';
-            item.style.color = 'var(--color-logolight)';
             item.style.zIndex = '1'; // Reset z-index
         });
     });

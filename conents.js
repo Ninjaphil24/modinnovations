@@ -1,6 +1,7 @@
 export const contentsClass = [
+    `<strong>An introduction to classes in php (with js)</strong>
+    <a href="https://youtu.be/CuZVhF_P96k" target="_blank">Go to Intro</a>`,
     `<a href="https://youtu.be/CuZVhF_P96k" target="_blank">Go to Episode 1</a>
-Intro
 Basic concepts
 Why Classes?
 Visualizing Classes
@@ -14,7 +15,6 @@ Concepts of economical writing
 Recap`,
 
     `<a href="https://youtu.be/bNN3aZizrb4" target="_blank">Go to Episode 2</a>
-Intro
 What is an object?
 Object in Javascript
 Associative(Key Value Pairs) vs Indexed 
@@ -24,12 +24,10 @@ Initializing variables in php vs js
 Understanding "this"`,
 
     `<a href="https://youtu.be/PEjaTR2aLXI" target="_blank">Go to Episode 3</a>
-Intro
 Objects and "this" (continued from previous episode)
 Why "this"?  Addressing scope of classes`,
 
     `<a href="https://youtu.be/PZmainUEBYs" target="_blank">Go to Episode 4</a>     
-Intro
 Demonstration of inheritance for functions
 Inheritance of constructor
 Abstract Classes
@@ -38,23 +36,23 @@ Interface
 Typehints in constructor
 Typehints in methods
 Traits
-Recap`
+Recap
+<a href="https://youtu.be/xh4JOHd5sjM?si=g7xDD37U9g6I2egm&t=1318" target="_blank">Learn Autoload here</a>     
+`
 ];
 
 export const contentsPHP = [
-    `<a href="" target="_blank">Go to Episode 1</a>
-    Episode 1
-Intro
+    `<strong>Understanding PHP and MVC
+    <a href="" target="_blank">Go to Intro</a>
+    <a href="https://github.com/Ninjaphil24/mvctut" target="_blank">Go to Github Repo</a>`,
+    `<a href="https://youtu.be/FZxj8uEcK3w" target="_blank">Go to Episode 1</a>
+    <a href="https://github.com/cretueusebiu/valet-windows" target="_blank">Go to Valet Repo</a>
 Valet for Windows Repo
 Install PHP with Powershell
 Install Valet for Windows
-Configure Valet to optimize X-Debug
+Configure Valet to optimize X-Debug`,
 
-Links:  https://github.com/cretueusebiu/valet-windows`,
-
-    `<a href="" target="_blank">Go to Episode 2</a>
-    Episode 2
-Intro
+    `<a href="https://youtu.be/hk4BI6szM30" target="_blank">Go to Episode 2</a>    
 Interactive Shell
 PHP Documentation
 MySQL Download
@@ -65,12 +63,9 @@ Download Table Plus
 Back/Front end relationships & PHP
 Creation of folders and files
 X-Debug config and test
-Intelephense installation
+Intelephense installation`,
 
-Links:  https://github.com/cretueusebiu/valet-windows`,
-
-    `<a href="" target="_blank">Go to Episode 3</a>
-    Episode 3
+    `<a href="https://youtu.be/kjXKO11dToY" target="_blank">Go to Episode 3</a>    
 Create Database
 Explanation of SQL
 CREATE TABLE syntax
@@ -83,9 +78,7 @@ Create Account on GitHub & SSH
 Create Repository
 Git Config`,
 
-    `<a href="" target="_blank">Go to Episode 4</a>
-    Episode 4
-Intro
+    `<a href="https://youtu.be/-OtjhSGXAuI" target="_blank">Go to Episode 4</a>
 How Valet works
 Explanation of architecture
 Writing Code! HTML/CSS
@@ -101,9 +94,7 @@ Error Handling->try (throw new Exception) catch
 Creating an error log
 .gitignore and commit`,
 
-    `<a href = "" target = "_blank" > Go to Episode 5</a>
-    Episode 5
-Intro
+    `<a href="https://youtu.be/-F9ejmkX2Rs" target="_blank" >Go to Episode 5</a>
 Create Migration
 Running Migration(Fails)
 Running Migration(Success - multi_query)
@@ -114,9 +105,7 @@ SQL injection security in php docs
 Prepare, Bind_Param, Execute!
 Demonstration of safety`,
 
-    `<a href = "" target = "_blank" > Go to Episode 6</a>
-    Episode 6
-Intro
+    `<a href="https://youtu.be/UdEO0576VZ4" target="_blank"> Go to Episode 6</a>
 Unique Email Key
 Run Duplicate Email Query
 Install phpMyAdmin
@@ -132,27 +121,24 @@ Wrong error demo
 mysql_stmt -> errno
 Error code working`,
 
-    `<a href = "" target = "_blank" > Go to Episode 7</a>
-    Episode 7
-Intro
+    `<a href="https://youtu.be/QCOomvlbVAQ" target="_blank">Go to Episode 7</a>    
 Intro to Unit Testing
 PHP Unit Installation
 Run 1st test
 Create 2nd test
 Create form test`,
 
-    `<a href = "" target = "_blank" > Go to Episode 8</a>
-    Episode 8
+    `<a href="https://youtu.be/XSvSdGqUPxY" target="_blank">Go to Episode 8</a>    
 Intro - Why MVC ?
-    Separate Connection file and env vars
+Separate Connection file and env vars
 What is MVC ?
-    Splitting files into MVC 1. Model
+Splitting files into MVC 
+1. Model
 2. Controller
 3. View
 PHP Unit testing`,
 
-    `<a href = "" target = "_blank" > Go to Episode 9</a>
-    Episode 9
+    `<a href="https://youtu.be/0TczOkAEAKI" target="_blank"> Go to Episode 9</a>
 Intro to Routing
 Step 1:  Associative Arrays
 Step 2:  Super Globals
@@ -167,8 +153,7 @@ MVC v1: Create Laravel type folder stucture
 Explanation of Routing
 Optimize Routing`,
 
-    `<a href = "" target = "_blank" > Go to Episode 10</a>
-    Episode 10
+    `<a href="https://youtu.be/xh4JOHd5sjM" target="_blank">Go to Episode 10</a>
 Intro to scope error
 Create git branch and using "global" keyword
 Solve scope error
@@ -184,9 +169,7 @@ Example of switch statement and optimize code
 Further optimization ternary vs switch
 Move logic from view to controller`,
 
-    `<a href = "" target = "_blank" > Go to Episode 11</a>
-    Episode 11
-Intro
+    `<a href="https://youtu.be/imlpHE89d8Y" target="_blank">Go to Episode 11</a>
 Optimize Model
 Further Unit Tests Intro
 1st new test: Submission
@@ -201,8 +184,7 @@ Mock methods in practice
 Explanation of bind_param and execute
 Test friendly coding`,
 
-    `<a href = "" target = "_blank" > Go to Episode 12</a>
-    Episode 12
+    `<a href="https://youtu.be/-At_cuCq60I" target="_blank">Go to Episode 12</a>
 Intro
 Refactoring from episode 11
 Intro to try/catch
@@ -216,8 +198,7 @@ Refactor else if and debug
 Recap
 Remove parameter by reference`,
 
-    `<a href = "" target = "_blank" > Go to Episode 13</a>
-    Episode 13
+    `<a href="https://youtu.be/vFiGzv3rudI" target="_blank">Go to Episode 13</a>
 Intro
 Associative Array for Router
 Router in interactive shell
@@ -226,16 +207,14 @@ Create Router folder and file
 Import Router to entry point
 Error Handling for Router Class`,
 
-    `<a href = "" target = "_blank" > Go to Episode 14</a>
-    Episode 14
+    `<a href="https://youtu.be/JJ29bPn9JYg" target="_blank">Go to Episode 14</a>
 Intro
 Convert if/else to try/catch
 Refactor for testIndexOutput
 Router Test
 Create tests for errors`,
 
-    `<a href = "" target = "_blank" > Go to Episode 15</a>
-    Episode 15
+    `<a href="https://youtu.be/1GGBRXbw_Es" target="_blank">Go to Episode 15</a>
 Intro
 Demo of fetch_assoc in interactive shell
 Explanation of data_seek
@@ -252,8 +231,7 @@ Create mock for internal functionality tests
 Use callback in test
 Outro`,
 
-    `<a href = "" target = "_blank" > Go to Episode 16</a>
-    Episode 16
+    `<a href="https://youtu.be/0AYZK73haF8" target="_blank">Go to Episode 16</a>
 Intro
 Small refactor of tests
 Refactor public to protected with trait
@@ -262,9 +240,7 @@ Create Interface
 Add table html for list.php
 Add button for a - tag to list`,
 
-    `<a href = "" target = "_blank" > Go to Episode 17</a>
-    Episode 17
-Intro
+    `<a href="https://youtu.be/rajM5sHdZW4" target="_blank">Go to Episode 17</a>
 Try / Catch for ListModel
 Create single entry functionality with query params
 Explanation of $_GET[]
@@ -273,13 +249,9 @@ The need for parse_url
 Create if statement within list view
 Preparation for various demo methods
 Call singleuser with fetch_assoc
-Call list with fetch_assoc using while loop
+Call list with fetch_assoc using while loop`,
 
-Link to button site & link to github css for button`,
-
-    `<a href = "" target = "_blank" > Go to Episode 18</a>
-    Episode 18
-Intro
+    `<a href="https://youtu.be/pegOcRBZDlY" target="_blank">Go to Episode 18</a>
 Optimize debugging statements
 Why you must not use query method
 Demonstration of sql injection via address bar
@@ -302,9 +274,7 @@ Test using find_all method
 Explaining end() in interactive shell
 Application of end() in test`,
 
-    `<a href = "" target = "_blank" > Go to Episode 19</a>
-    Episode 19
-Intro
+    `<a href="https://youtu.be/Aaqr3j4KIao" target="_blank">Go to Episode 19</a>
 Refactor db id numbering in tests
 Explanation of Operator Precedence
 Fix Success Button
@@ -314,9 +284,7 @@ Debugging
 Solution to bug
 Outro`,
 
-    `<a href = "" target = "_blank" > Go to Episode 20</a>
-    Episode 20
-Intro
+    `<a href="https://youtu.be/zzBYC4XtQZI" target="_blank">Go to Episode 20</a>
 PHP methods in Interactive Shell: foreach
 Nested Array
 Example of a Route
@@ -329,11 +297,10 @@ string_replace
 array_shift
 spread operator
 Outro
+<a href="https://regexr.com/" target="_blank">RegEx Tool</a>
+`,
 
-Links for regular expressions`,
-
-    `<a href = "" target = "_blank" > Go to Episode 21</a>
-    Episode 21
+    `<a href="https://youtu.be/f7Fq4sGG2Eo" target="_blank">Go to Episode 21</a>
 Intro and review of router
 Add debug statements
 Review with debug statements of how router works
@@ -362,8 +329,7 @@ Outro
 
 Links for regular expressions`,
 
-    `<a href = "" target = "_blank" > Go to Episode 22</a>
-    Episode 22
+    `<a href="https://youtu.be/EB7UqALxhIQ" target="_blank">Go to Episode 22</a>
 Intro and review of router
 Exceptions
 Unit tests for router review(no new test)
@@ -372,8 +338,7 @@ Create test for array_shift
 Refactor to test friendly code
 Finish wildcard test`,
 
-    `<a href = "" target = "_blank" > Go to Episode 23</a>
-    Episode 23
+    `<a href="https://youtu.be/b_p77Imbrpg" target="_blank">Go to Episode 23</a>
 Intro & test refactoring
 Refactor router for sql error exception
 Further testing
@@ -385,20 +350,16 @@ Write Single User test query strings
 Write Single User test wildcard
 Avoid global vars for test friendly code
 
-Look at mistakes and find where they are made`,
+Look at mistakes and find where they are made
 
-    `<a href = "" target = "_blank" > Go to Episode 23B</a>
-    Episode 23B
-Intro
+<a href="https://youtu.be/iVta1OHJK1o" target="_blank">Go to Episode 23B</a>
 Refactor to correct mistakes
 Explanation of possible solutions
 Logging
 At long last, the reason
 Outro`,
 
-    `<a href = "" target = "_blank" > Go to Episode 24</a>
-    Episode 24
-Intro
+    `<a href="https://youtu.be/MflnnQUQT6E" target="_blank">Go to Episode 24</a>
 Javascript structure:  Prototype chain
 Examples in console 
 Constructor Functions
@@ -408,8 +369,7 @@ MDN Docs
 Web API hierarchy
 Recap`,
 
-    `<a href = "" target = "_blank" > Go to Episode 25</a>
-    Episode 25
+    `<a href="https://youtu.be/ibN-Rs3BwaI" target="_blank">Go to Episode 25</a>
 Intro: Explanation of full page load
 Explanation of Ajax: partial page load
 PHP & HTML / CSS setup for Ajax
@@ -431,9 +391,7 @@ Inject json into DOM
 Create single user button
 Outro`,
 
-    `<a href = "" target = "_blank" > Go to Episode 26</a>
-    Episode 26
-Intro
+    `<a href="https://youtu.be/qsIuQvHIGaQ" target="_blank">Go to Episode 26</a>
 Create php function for single user ajax
 URI placement & philosophy of code
 The event object
@@ -443,9 +401,7 @@ Writing single user function
 Make anonymous functions callable
 Recap`,
 
-    `<a href = "" target = "_blank" > Go to Episode 27</a>
-    Episode 27
-Intro
+    `<a href="https://youtu.be/mVBYgmwoDg8" target="_blank">Go to Episode 27</a>
 Ajax with query string
 Fetch API Step 1: Promises
 Fetch API with Ajax, further explanations
@@ -454,8 +410,7 @@ Arrow function characteristics
 Fetch API syntax and implementation
 Outro`,
 
-    `<a href = "" target = "_blank" > Go to Episode 28</a>
-    Episode 28
+    `<a href="https://youtu.be/iNx4h_OmLfM" target="_blank">Go to Episode 28</a>
 Intro:  Duplicate code problem
 Create Components and refactor PHP
 const, let and var
@@ -471,16 +426,12 @@ Add switch for different buttons
 Final component creation for ajax
 Outro`,
 
-    `<a href = "" target = "_blank" > Go to Episode 29</a>
-    Episode 29
-Intro
+    `<a href="https://youtu.be/vKJc5gSaXWE" target="_blank">Go to Episode 29</a>
 Demo of local storage
 Create local storage options
 PHP cookies`,
 
-    `<a href = "" target = "_blank" > Go to Episode 30</a>
-    Episode 30
-Intro
+    `<a href="https://youtu.be/0TT8SN4YLiU" target="_blank">Go to Episode 30</a>
 Corrections to background color options
 PHP Cookie refactor
 PHP Doc Comments
@@ -490,11 +441,9 @@ Function reference
 Middleware and Doc Comments continued
 Middleware recap`,
 
-    `<a href = "" target = "_blank" > Go to Episode 31</a>
-    Episode 31
-Intro
+    `<a href="https://youtu.be/RKOkGboiLnY" target="_blank">Go to Episode 31</a>
 async / await
-    API 1.file_get_contents
+API 1.file_get_contents
 2. Example of actual local API: PHP to Ajax
 json_decode
 stdClass
@@ -503,8 +452,7 @@ curl
 Push Notifications Step 1: ngrok
 Push Notifications Step 2: onesignal`,
 
-    `<a href = "" target = "_blank" > Go to Episode 32</a>
-    Episode 32
+    `<a href="https://youtu.be/Eq63zdrB2Ps" target="_blank">Go to Episode 32</a>
 Intro to vendor folder and packaging
 Preparation 
 Write composer.json
@@ -524,8 +472,10 @@ Js packaging complete and debugging
 ];
 
 export const contentsJS = [
-    `<a href = "" target = "_blank" > Go to Episode 1</a>
-    Intro 
+    `<strong>Front-End Demystified: A Deep Dive into Vue.js
+    <a href="" target="_blank">Go to Intro</a>
+    <a href="https://github.com/Ninjaphil24/VanillaVue" target="_blank">Go to Github Repo</a>`,
+    `<a href="https://youtu.be/-GxQXzoWZ7c" target="_blank">Go to Episode 1</a>
 Create basic website with boilerplate and href
 Full page reload demo
 Single Page App theory
@@ -536,8 +486,8 @@ SPA file structure
 Create main.js
 Outro`,
 
-    `<a href = "" target = "_blank" > Go to Episode 2</a>
-    Organize folder
+    `<a href="https://youtu.be/Wlg7bMSFF2k" target="_blank">Go to Episode 2</a>
+Organize folder
 Install vue.js
 Vue app ready / comparison of vue app and js app
 Refactor vanilla js to look like vue.js
@@ -546,21 +496,21 @@ Correct index.html placement
 Refactor router for new folder structure
 Refactor router if statement to proper routing`,
 
-    `<a href = "" target = "_blank" > Go to Episode 3</a>
-    Refactoring for #
+    `<a href="https://youtu.be/0cYShcRUw3c" target="_blank">Go to Episode 3</a>
+Refactoring for #
 Intro to Web Components & Shadow DOM
 Create custom html tags router - view
 Create custom tag router - link + attributes
 Create hello - world custom tag
 Outro`,
 
-    `<a href = "" target = "_blank" > Go to Episode 4</a>
-    Ep 3 recap and correct repeat code
+    `<a href="https://youtu.be/Zu3NAxIAYkI" target="_blank">Go to Episode 4</a>
+Ep 3 recap and correct repeat code
 The template tag theory
 Using template tag and document fragment`,
 
-    `<a href = "" target = "_blank" > Go to Episode 5</a>
-    Playground commit
+    `<a href="https://youtu.be/qoqvTHT_u3k" target="_blank">Go to Episode 5</a>
+Playground commit
 Clarification of HTMLElement
 Clarification of template tag
 Refactor vanilla js to resemble vue.js more closely
@@ -569,26 +519,26 @@ Explanation of scoped style vs shadow DOM
 Refactoring all components
 Template for App.js`,
 
-    `<a href = "" target = "_blank" > Go to Episode 6</a>
-    First look at Vue.js starter code.Counter, store & state management
+    `<a href="https://youtu.be/3PTJXQoJ8BE" target="_blank">Go to Episode 6</a>
+First look at Vue.js starter code.Counter, store & state management
 First look at computed
 Recreating vue features in vanilla js
 Functions returning objects
 Getter function
-    First steps for store in vanilla js
+First steps for store in vanilla js
 Create ref, computed and defineStore functions
 Create store in vanilla js
 Refactor home & about to use template tag
 Refactor to use memory instead of parsing in the DOM
 Complete counter in vanilla js`,
 
-    `<a href = "" target = "_blank" > Go to Episode 7</a>
-    Recap of Episode 6 and refactor all template tags to memory
+    `<a href="https://youtu.be/yYsLW8S5uVU" target="_blank">Go to Episode 7</a>
+Recap of Episode 6 and refactor all template tags to memory
 Create Options / Composition API switch in vue app
 Apply API toggle to HomeView & real life example of computed
 Apply API toggle to AboutView and outro`,
 
-    `<a href="" target="_blank">Go to Episode 8</a>
+    `<a href="https://youtu.be/0sdf90jbysI" target="_blank">Go to Episode 8</a>
 JS Theory revision:
 Types of function syntax
 Spread operator "..."
@@ -600,7 +550,7 @@ Create store for Vanilla js in Options style
 Getters in the store
 Outro`,
 
-    `<a href="" target="_blank">Go to Episode 9</a>
+    `<a href="https://youtu.be/5BjJB8C9e_E" target="_blank">Go to Episode 9</a>
 Setters and Getters conceptually
 Returning object literals 
 Set and Get keywords
@@ -609,7 +559,7 @@ Refactor counter to match button choice
 Remove repeat code
 Outro`,
 
-    `<a href="" target="_blank">Go to Episode 10</a>
+    `<a href="https://youtu.be/NlNUliN_-YE" target="_blank">Go to Episode 10</a>
 Styling in vue.js
 First look at vue dev tools
 Create a new view
@@ -623,7 +573,7 @@ Step 2:  Proxy
 Step 3:  Build data proxy using above concepts
 Step 4:  Create route for vanilla version of vue component`,
 
-    `<a href="" target="_blank">Go to Episode 11</a>
+    `<a href="https://youtu.be/EJeVe2wuwuY" target="_blank">Go to Episode 11</a>
 Create Composition API style code 
 Connect two APIs to API switch and use of components
 Repeat for vanilla
@@ -631,7 +581,7 @@ Object destructuring example
 Debugging
 Understanding instantiation of functions and variables`,
 
-    `<a href="" target="_blank">Go to Episode 12</a>
+    `<a href="https://youtu.be/j6QR5-S8zz0" target="_blank">Go to Episode 12</a>
 Create Playground in vue app
 End of component creation and repeat in vanilla js
 Text interpolation explained
@@ -640,7 +590,7 @@ Create a new functionality
 Using onclick to imitate @click
 Create setStatus in vue app`,
 
-    `<a href="" target="_blank">Go to Episode 13</a>
+    `<a href="https://youtu.be/K_ACUvTAibk" target="_blank">Go to Episode 13</a>
 CSS in vanilla to imitate vue format
 V-directives, vanilla version of v-show
 v-show in vue.js
@@ -654,7 +604,7 @@ v-model
 Introduction to v-bind in vanilla
 v-bind intro in vue app`,
 
-    `<a href="" target="_blank">Go to Episode 14</a>
+    `<a href="https://youtu.be/lrt1Yd1Qyzo" target="_blank">Go to Episode 14</a>
 Virtual DOM concepts
 Nodes
 Elements in memory
@@ -673,7 +623,7 @@ State of new instantiation
 Check to see if there are differences
 Demonstration of isolation of changes in diffing`,
 
-    `<a href="" target="_blank">Go to Episode 15</a>
+    `<a href="https://youtu.be/zK0jGh24hJQ" target="_blank">Go to Episode 15</a>
 v-bind setup
 v-bind = setAttribute demo in vanilla
 v-bind in vue app
@@ -685,14 +635,14 @@ Toggle classes like v-bind in vanilla
 Toggle classes with v-bind in vue app
 v-bind array syntax`,
 
-    `<a href="" target="_blank">Go to Episode 16</a>
+    `<a href="https://youtu.be/FypymaJ4Qb0" target="_blank">Go to Episode 16</a>
 Parent and children componenents
 Slot philosophy
 Prop philosophy
 Differentiate colors for each slot
 Lifecycle hook intro`,
 
-    `<a href="" target="_blank">Go to Episode 17</a>
+    `<a href="https://youtu.be/bRACh2qJRPc" target="_blank">Go to Episode 17</a>
 Continue from previous episode
 Use Web Components to create parent and child
 Using slot tag
@@ -708,7 +658,7 @@ Composition API version
 Correction of TS mistake
 Intro to toRefs`,
 
-    `<a href="" target="_blank">Go to Episode 18</a>
+    `<a href="https://youtu.be/bRACh2qJRPc" target="_blank">Go to Episode 18</a>
 Introduction to lifecycle hooks
 DOMContentLoaded
 load
@@ -721,7 +671,7 @@ bf cache
 onpageshow & persisted for bf cache
 onpagehide & session storage`,
 
-    `<a href="" target="_blank">Go to Episode 19</a>
+    `<a href="https://youtu.be/N8Ra66zLCw4" target="_blank">Go to Episode 19</a>
 Create Lifecycle components in vue app
 Move Vanilla Folders & setup backend
 Intro to backend with postman
@@ -741,7 +691,7 @@ Async version of fetch
 
 Link to callstack tutorial`,
 
-    `<a href="" target="_blank">Go to Episode 20</a>
+    `<a href="https://youtu.be/4jhPy7U6PsM" target="_blank">Go to Episode 20</a>
 Node.js continued: Express & post request
 Lowdb in json server
 Json web token
@@ -756,7 +706,7 @@ CORS more in depth
 Add jwt into local storage
 A lifecycle hook! (Finally)`,
 
-    `<a href="" target="_blank">Go to Episode 21</a>
+    `<a href="https://youtu.be/-I1AA8uYDBE" target="_blank">Go to Episode 21</a>
 Recap of previous episode
 Correct jwt.verify. Refactor username key
 Mount backend into vue app
@@ -767,7 +717,7 @@ Options vs Composition with lifecycle hooks
 Create a "Loading..." frame
 Debug using Vue Devtools & Sources tab`,
 
-    `<a href="" target="_blank">Go to Episode 22</a>
+    `<a href="https://youtu.be/zYuCPjyquXI" target="_blank">Go to Episode 22</a>
 Created Lifecycle Hook, $refs, $emit
 Explanation of $refs
 $emit - explanation 
@@ -786,6 +736,8 @@ Replacing lifecycle hooks with watchers`
 ];
 
 export const contentsLaravel = [
+    `<strong>Full stack, with CI/CD and chatGPT
+    <a href="https://youtu.be/CuZVhF_P96k" target="_blank">Go to Intro</a>`,
     `<a href="https://youtu.be/CuZVhF_P96k" target="_blank">Go to Episode 1</a>
 Intro
 Basic concepts

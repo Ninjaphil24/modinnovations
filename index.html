@@ -26,17 +26,43 @@
 
     <div class="presentation">
         <div class="home">
-            <h1>Modinstructional</h1>
-            <p>Modinstructional is a platform for learning programming languages and frameworks</p>
+            <h1>Modinnovations Presents</h1><br>
+            <div class="titles">
+                <h3>1. An introduction to classes in php (with js)</h3>
+                <h3>2. Understanding PHP and MVC</h3>
+                <h3>3. Front-End Demystified: A Deep Dive into Vue.js</h3>
+                <h3>4. Full stack, with CI/CD and chatGPT</h3> <br><br>
+            </div>
+            The tutorial series contained on this platform has been the result of 2 years of research by it's creator,
+            Philip Modinos. The main focus of the tutorials is a deep dive in concepts surrounding the practices of
+            frameworks like laravel and vue.js. <br>
+            The greatest problem that aspiring web developers face in their search for knowledge is the lack of
+            context. This tutorial series aims to provide that context by providing a step by step guide to the
+            creation of a full stack application. <br>
+            The final part of the tutorial leverages all the knowledge accumulated from the previous parts to
+            demonstrate how with the guidance of AI alongside the presets of laravel and vue.js, a developer can
+            create a web application that's ready to go in a few hours, always demonstrating the process in it's
+            full context. <br>
+            Click any of the icons below to get started, or click the about button to learn more about how the
+            tutorial is structured. <br>
+            </p>
         </div>
 
         <div class="about">
-            <h1>How to use this tutorial</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo corporis laudantium quia? Eligendi
-                assumenda
-                nisi veniam corrupti, incidunt debitis provident autem unde neque suscipit cupiditate. Provident quos
-                nemo
-                beatae similique.</p>
+            <h1>How to use this tutorial:</h1><br>
+            <p>
+                The tutorial is structured in 4 parts, each part is a series of video tutorials. Click on one of the
+                icons below and you will be taken to that category. Each category has a list of episodes, click on an
+                episode to view the video. The episodes are structured in a way that you can follow along with the video
+                and code along with the instructor. The code for the first category - Classes in PHP is not available on
+                github, as this is a tutorial about concepts and there is no code to retain. The code for the other
+                categories is available on github, you can access the repo from the links provided. <br>
+                Videos are hosted on youtube, you can access the videos by clicking on the links provided and a new tab
+                will open with the video.<br>
+                If you have any questions or feedback, please click the contact button and send a message. Enjoy the
+                tutorials!
+
+            </p>
         </div>
     </div>
 
@@ -168,61 +194,97 @@
 
         classes.addEventListener('click', () => {
             contents = contentsClass;
-            numberOfLines = 4;
+            numberOfLines = 5;
             document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-classes');
             document.body.style.backgroundImage = "url('img/classes.svg')";
             document.body.style.backgroundAttachment = "fixed";
             document.body.style.backgroundRepeat = "no-repeat";
             document.body.style.backgroundPosition = "10px 70px";
             document.body.style.backgroundSize = "100px";
-            updateEpisodesList(numberOfLines, contents);
+            let titleVar = `An introduction to classes in php (with js)`
+            updateEpisodesList(numberOfLines, contents, titleVar);
             document.querySelector('.episodes').style.display = 'flex';
             document.querySelector('.presentation').style.display = 'none';
         });
 
         php.addEventListener('click', () => {
             contents = contentsPHP;
-            numberOfLines = 32;
+            numberOfLines = 33;
             document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-php');
             document.body.style.backgroundImage = "url('img/php.svg')";
             document.body.style.backgroundSize = "100px";
             document.body.style.backgroundAttachment = "fixed";
             document.body.style.backgroundRepeat = "no-repeat";
             document.body.style.backgroundPosition = "10px 70px";
-            updateEpisodesList(numberOfLines, contents);
+            let titleVar = `Understanding PHP and MVC`
+            updateEpisodesList(numberOfLines, contents, titleVar);
             setActiveButton(php);
             document.querySelector('.episodes').style.display = 'flex';
             document.querySelector('.presentation').style.display = 'none';
+            document.querySelectorAll('.content a').forEach(item => {
+                item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-php2');
+            });
+
+            document.querySelectorAll('.content a:hover').forEach(item => {
+                item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-php2');
+            });
+            document.querySelectorAll('.episodes ul li').forEach(item => {
+                item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-php2');
+            });
         });
 
         js.addEventListener('click', () => {
             contents = contentsJS;
-            numberOfLines = 22; // Set appropriate number of lines for JS
+            numberOfLines = 21; // Set appropriate number of lines for JS
             document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-js1');
             document.body.style.backgroundImage = "url('img/vue.svg')";
             document.body.style.backgroundAttachment = "fixed";
             document.body.style.backgroundSize = "100px";
             document.body.style.backgroundRepeat = "no-repeat";
             document.body.style.backgroundPosition = "10px 70px";
-            updateEpisodesList(numberOfLines, contents);
+            let titleVar = `Front-End Demystified: A Deep Dive into Vue.js`
+            updateEpisodesList(numberOfLines, contents, titleVar);
             setActiveButton(js);
             document.querySelector('.episodes').style.display = 'flex';
             document.querySelector('.presentation').style.display = 'none';
+            document.querySelectorAll('.content a').forEach(item => {
+                item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-js2');
+            });
+
+            document.querySelectorAll('.content a:hover').forEach(item => {
+                item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-js2');
+            });
+            document.querySelectorAll('.episodes ul li').forEach(item => {
+                item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-js2');
+            });
         });
 
         laravel.addEventListener('click', () => {
             contents = contentsLaravel;
-            numberOfLines = 4; // Set appropriate number of lines for Laravel
+            numberOfLines = 5; // Set appropriate number of lines for Laravel
             document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-laravel');
             document.body.style.backgroundImage = "url('img/laravel.svg')";
             document.body.style.backgroundAttachment = "fixed";
             document.body.style.backgroundRepeat = "no-repeat";
             document.body.style.backgroundSize = "170px";
             document.body.style.backgroundPosition = "10px 70px";
-            updateEpisodesList(numberOfLines, contents);
+            let titleVar = `Full stack, with CI/CD and chatGPT`
+            updateEpisodesList(numberOfLines, contents, titleVar);
             setActiveButton(laravel);
             document.querySelector('.episodes').style.display = 'flex';
             document.querySelector('.presentation').style.display = 'none';
+            document.querySelectorAll('.content a').forEach(item => {
+                item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-larared');
+
+            });
+
+            document.querySelectorAll('.content a:hover').forEach(item => {
+                item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-larared');
+            });
+            document.querySelectorAll('.episodes ul li').forEach(item => {
+                item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-larared');
+            });
+
         });
         // Episodes End
     </script>
