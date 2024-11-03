@@ -12,10 +12,6 @@
     align-content: flex-start;
 }
 
-input {
-    display: none;
-}
-
 label[for=btn] {
     position: absolute;
     width: calc(var(--sz) * 6);
