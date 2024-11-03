@@ -1,4 +1,4 @@
-export function updateEpisodesList(numberOfLines, contents, titleVar) {
+function updateEpisodesList(numberOfLines, contents, titleVar) {
     const episodesArray = Array.from({ length: numberOfLines }, (_, i) => i == 0 ? titleVar : `Episode ${i}`);
     const episodesList = document.querySelector('.episodes ul');
     episodesList.innerHTML = ''; // Clear existing list
@@ -85,7 +85,7 @@ export function updateEpisodesList(numberOfLines, contents, titleVar) {
     });
 }
 
-export function setActiveButton(button) {
+function setActiveButton(button) {
     document.querySelectorAll('button').forEach(btn => {
         btn.classList.remove('active');
     });
