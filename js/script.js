@@ -35,11 +35,9 @@ function updateEpisodesList(numberOfLines, contents, titleVar) {
                 console.log(contents[item.dataset.index]);
                 item.querySelector('.episode-title').style.display = 'none'; // Hide the title
                 item.appendChild(contentDiv);
+                const dataIndex = event.target.getAttribute('data-index')
                 item.style.height = `${contentDiv.scrollHeight + 50}px`; // Set height to content height + initial height
                 item.classList.add('active'); // Add active class
-                // Local storage
-                const dataIndex = event.target.getAttribute('data-index')
-                localStorage.setItem('episode', dataIndex);
                 // Wait for the height transition to complete before showing the content
                 item.addEventListener('transitionend', function showContent(event) {
                     if (event.propertyName === 'height') {

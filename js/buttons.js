@@ -133,23 +133,4 @@ laravel.addEventListener('click', () => {
 
 });
 
-// localStorage start
-// let episode = localStorage.getItem('episode');
-// const observer = new MutationObserver((mutationsList, observer) => {
-//     episode = localStorage.getItem('episode');
-//     for (const mutation of mutationsList) {
-//         if (mutation.type === 'childList') {
-//             const liElement = document.querySelector(`li[data-index="${episode}"]`);
-//             if (liElement) {
-//                 console.log(liElement);
-//                 liElement.style.height = `${liElement.scrollHeight + 50}px`; // Set height to content height + initial height
-//                 liElement.classList.add('active'); // Add active class
-//                 break;
-//             }
-//         }
-//     }
-// });
-
-// observer.observe(document.querySelector('.episodes ul'), { childList: true });
-// locoalStorage end
 // Episodes End
