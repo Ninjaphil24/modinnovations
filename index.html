@@ -196,7 +196,12 @@
                 let storedEp = localStorage.getItem('activeEpisode');
                 console.log("localStorage has items");
                 storedBtn == 'classes' ? classBtn.click() : storedBtn == 'php' ? phpBtn.click() : storedBtn == 'js' ? jsBtn.click() : storedBtn == 'laravel' ? laravelBtn.click() : null
-                storedEp ? document.querySelector(`.episodes ul li:nth-child(${storedEp})`).click() : null;
+
+                if (storedEp) {
+                    const episodeElement = document.querySelector(`.episodes ul li:nth-child(${storedEp})`);
+                    episodeElement.click();
+                    episodeElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
             }
         })
         // locoalStorage end
