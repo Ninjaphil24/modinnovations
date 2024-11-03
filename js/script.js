@@ -11,9 +11,7 @@ function updateEpisodesList(numberOfLines, contents, titleVar) {
         // console.log("outside if")
         if (localStorage.getItem('checkBool') === 'true') {
             // console.log("inside if")
-            console.log("click for loop before event listener")
             li.addEventListener('click', () => {
-                console.log("click for loop event listener")
                 localStorage.setItem('activeEpisode', index + 1);
             });
         }

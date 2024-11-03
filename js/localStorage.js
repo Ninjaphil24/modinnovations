@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         let storedEp = localStorage.getItem('activeEpisode');
         // console.log("localStorage has items");
         storedBtn == 'classes' ? classBtn.click() : storedBtn == 'php' ? phpBtn.click() : storedBtn == 'js' ? jsBtn.click() : storedBtn == 'laravel' ? laravelBtn.click() : null
-        console.log(categoryMemory)
         if (storedEp) {
             const episodeElement = document.querySelector(`.episodes ul li:nth-child(${storedEp})`);
             episodeElement.click();
