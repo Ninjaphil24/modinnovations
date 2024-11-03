@@ -9,7 +9,7 @@ function updateEpisodesList(numberOfLines, contents, titleVar) {
         li.dataset.index = index; // Store the index in a data attribute
         episodesList.appendChild(li);
         li.addEventListener('click', () => {
-            localStorage.setItem('activeEpisode', index);
+            localStorage.setItem('activeEpisode', index + 1);
         });
     }
     // Open and close episode bar

@@ -8,6 +8,7 @@
     <!-- Import LogoFlat.png as favicon-->
     <link rel="icon" href="./img/LogoFlat.png" type="image/png">
     <title>Modinstructional</title>
+
 </head>
 
 <body>
@@ -126,27 +127,20 @@
     <script src="js/script.js"></script>
     <script>
         // localStorage start
-        // document.addEventListener('click', (e) => {
-        //     console.log(e.target);
-        // })
-        // localStorage.setItem('episode', dataIndex);
-        // let episode = localStorage.getItem('episode');
-        // const observer = new MutationObserver((mutationsList, observer) => {
-        //     episode = localStorage.getItem('episode');
-        //     for (const mutation of mutationsList) {
-        //         if (mutation.type === 'childList') {
-        //             const liElement = document.querySelector(`li[data-index="${episode}"]`);
-        //             if (liElement) {
-        //                 console.log(liElement);
-        //                 liElement.style.height = `${liElement.scrollHeight + 50}px`; // Set height to content height + initial height
-        //                 liElement.classList.add('active'); // Add active class
-        //                 break;
-        //             }
-        //         }
-        //     }
-        // });
 
-        // observer.observe(document.querySelector('.episodes ul'), { childList: true });
+        document.addEventListener('DOMContentLoaded', () => {
+            let storedBtn = localStorage.getItem('activeButton');
+            let storedEp = localStorage.getItem('activeEpisode');
+            console.log(storedBtn, storedEp);
+            const classBtn = document.getElementById('classes');
+            const phpBtn = document.getElementById('php');
+            const jsBtn = document.getElementById('js');
+            const laravelBtn = document.getElementById('laravel');
+            storedBtn == 'classes' ? classBtn.click() : storedBtn == 'php' ? phpBtn.click() : storedBtn == 'js' ? jsBtn.click() : laravelBtn.click();
+            storedEp ? document.querySelector(`.episodes ul li:nth-child(${storedEp})`).click() : null;
+
+        })
+
         // locoalStorage end
     </script>
 </body>
