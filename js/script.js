@@ -8,6 +8,9 @@ function updateEpisodesList(numberOfLines, contents, titleVar) {
         li.textContent = episode;
         li.dataset.index = index; // Store the index in a data attribute
         episodesList.appendChild(li);
+        li.addEventListener('click', () => {
+            localStorage.setItem('activeEpisode', index);
+        });
     }
     // Open and close episode bar
     let currentExpandedItem = null;
@@ -32,7 +35,7 @@ function updateEpisodesList(numberOfLines, contents, titleVar) {
                 const contentDiv = document.createElement('div');
                 contentDiv.classList.add('content');
                 contentDiv.innerHTML = contents[item.dataset.index].replace(/(\d{2}:\d{2} - )?/g, '').replace(/\n/g, '<br>');
-                console.log(contents[item.dataset.index]);
+                // console.log(contents[item.dataset.index]);
                 item.querySelector('.episode-title').style.display = 'none'; // Hide the title
                 item.appendChild(contentDiv);
                 const dataIndex = event.target.getAttribute('data-index')

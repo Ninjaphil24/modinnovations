@@ -51,6 +51,8 @@ classes.addEventListener('click', () => {
     updateEpisodesList(numberOfLines, contents, titleVar);
     document.querySelector('.episodes').style.display = 'flex';
     document.querySelector('.presentation').style.display = 'none';
+    localStorage.clear();
+    localStorage.setItem('activeButton', 'classes');
 });
 
 php.addEventListener('click', () => {
@@ -77,6 +79,8 @@ php.addEventListener('click', () => {
     document.querySelectorAll('.episodes ul li').forEach(item => {
         item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-php2');
     });
+    localStorage.clear();
+    localStorage.setItem('activeButton', 'php');
 });
 
 js.addEventListener('click', () => {
@@ -103,6 +107,8 @@ js.addEventListener('click', () => {
     document.querySelectorAll('.episodes ul li').forEach(item => {
         item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-js2');
     });
+    localStorage.clear();
+    localStorage.setItem('activeButton', 'js');
 });
 
 laravel.addEventListener('click', () => {
@@ -130,7 +136,8 @@ laravel.addEventListener('click', () => {
     document.querySelectorAll('.episodes ul li').forEach(item => {
         item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-larared');
     });
-
+    localStorage.clear();
+    localStorage.setItem('activeButton', 'laravel');
 });
 
 // Episodes End
