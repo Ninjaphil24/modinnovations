@@ -56,7 +56,8 @@
             <h2>How to use this tutorial:</h2><br>
             <p>
                 The tutorial is structured in 4 parts, each part is a series of video tutorials. Click on one of
-                theicons below and you will be taken to that category. Each category has a list of episodes, click on an
+                the icons below and you will be taken to that category. Each category has a list of episodes, click on
+                an
                 episode to view the video. The episodes are structured in a way that you can follow along with the video
                 and code along with the instructor. The code for the first category - Classes in PHP is not available on
                 github, as this is a tutorial about concepts and there is no code to retain. The code for the other
@@ -292,31 +293,23 @@
         });
 
         // localStorage start
+        // let episode = localStorage.getItem('episode');
+        // const observer = new MutationObserver((mutationsList, observer) => {
+        //     episode = localStorage.getItem('episode');
+        //     for (const mutation of mutationsList) {
+        //         if (mutation.type === 'childList') {
+        //             const liElement = document.querySelector(`li[data-index="${episode}"]`);
+        //             if (liElement) {
+        //                 console.log(liElement);
+        //                 liElement.style.height = `${liElement.scrollHeight + 50}px`; // Set height to content height + initial height
+        //                 liElement.classList.add('active'); // Add active class
+        //                 break;
+        //             }
+        //         }
+        //     }
+        // });
 
-        let episodesList = document.querySelector('.episodes ul');
-
-        // Create a mutation observer to observe if the li appears
-        const observer = new MutationObserver((mutationsList, observer) => {
-            for (let mutation of mutationsList) {
-                if (mutation.type === 'childList') {
-                    mutation.addedNodes.forEach(node => {
-                        if (node.nodeName === 'LI') {
-                            let content = node.querySelector('.content a')
-                            // console.log(content);
-                            // .addEventListener('click', (event) => {
-                            //     event.preventDefault();
-                            //     console.log(node.getAttribute('data-index'));
-                            // });
-
-                        }
-                    });
-                }
-            }
-        });
-
-        // Start observing the target node for configured mutations
-        observer.observe(episodesList, { childList: true });
-
+        // observer.observe(document.querySelector('.episodes ul'), { childList: true });
         // locoalStorage end
         // Episodes End
     </script>

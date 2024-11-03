@@ -9,7 +9,6 @@ export function updateEpisodesList(numberOfLines, contents, titleVar) {
         li.dataset.index = index; // Store the index in a data attribute
         episodesList.appendChild(li);
     }
-
     // Open and close episode bar
     let currentExpandedItem = null;
 
@@ -33,11 +32,14 @@ export function updateEpisodesList(numberOfLines, contents, titleVar) {
                 const contentDiv = document.createElement('div');
                 contentDiv.classList.add('content');
                 contentDiv.innerHTML = contents[item.dataset.index].replace(/(\d{2}:\d{2} - )?/g, '').replace(/\n/g, '<br>');
+                console.log(contents[item.dataset.index]);
                 item.querySelector('.episode-title').style.display = 'none'; // Hide the title
                 item.appendChild(contentDiv);
                 item.style.height = `${contentDiv.scrollHeight + 50}px`; // Set height to content height + initial height
                 item.classList.add('active'); // Add active class
-
+                // Local storage
+                const dataIndex = event.target.getAttribute('data-index')
+                localStorage.setItem('episode', dataIndex);
                 // Wait for the height transition to complete before showing the content
                 item.addEventListener('transitionend', function showContent(event) {
                     if (event.propertyName === 'height') {
