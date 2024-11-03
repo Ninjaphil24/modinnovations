@@ -8,9 +8,14 @@ function updateEpisodesList(numberOfLines, contents, titleVar) {
         li.textContent = episode;
         li.dataset.index = index; // Store the index in a data attribute
         episodesList.appendChild(li);
-        li.addEventListener('click', () => {
-            localStorage.setItem('activeEpisode', index + 1);
-        });
+
+        console.log("outside if")
+        if (localStorage.getItem('checkBool') === 'true') {
+            console.log("inside if")
+            li.addEventListener('click', () => {
+                localStorage.setItem('activeEpisode', index + 1);
+            });
+        }
     }
     // Open and close episode bar
     let currentExpandedItem = null;

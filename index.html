@@ -19,8 +19,45 @@
             <li><button id="about">About</button></li>
             <li><button id="contact">Contact</button></li>
         </ul>
-        <div class="logo">
-            <img src="./img/LogoFlat.svg" alt="Modinnovations">
+        <div class="toggleFlex">
+            <div id="toggleText">Turn on Episode Memory</div>
+            <div class="toggle">
+                <input type="checkbox" id="btn">
+                <label for="btn">
+                    <span class="track">
+                        <span class="track-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        <span class="track-bot">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </span>
+                    <span class="thumb"></span>
+                </label>
+                <div class="lights">
+                    <span class="light-off"></span>
+                    <span class="light-on"></span>
+                </div>
+
+            </div>
         </div>
     </nav>
 
@@ -129,18 +166,24 @@
         // localStorage start
 
         document.addEventListener('DOMContentLoaded', () => {
-            let storedBtn = localStorage.getItem('activeButton');
-            let storedEp = localStorage.getItem('activeEpisode');
-            console.log(storedBtn, storedEp);
+            let checkbox = document.getElementById('btn');
+            checkbox.addEventListener('change', () => {
+                checkbox.checked ? localStorage.setItem('checkBool', 'true') : localStorage.clear();
+            })
             const classBtn = document.getElementById('classes');
             const phpBtn = document.getElementById('php');
             const jsBtn = document.getElementById('js');
             const laravelBtn = document.getElementById('laravel');
-            storedBtn == 'classes' ? classBtn.click() : storedBtn == 'php' ? phpBtn.click() : storedBtn == 'js' ? jsBtn.click() : laravelBtn.click();
-            storedEp ? document.querySelector(`.episodes ul li:nth-child(${storedEp})`).click() : null;
 
+            if (localStorage.length > 0) {
+                checkbox.checked = true;
+                let storedBtn = localStorage.getItem('activeButton');
+                let storedEp = localStorage.getItem('activeEpisode');
+                console.log("localStorage has items");
+                storedBtn == 'classes' ? classBtn.click() : storedBtn == 'php' ? phpBtn.click() : storedBtn == 'js' ? jsBtn.click() : storedBtn == 'laravel' ? laravelBtn.click() : null
+                storedEp ? document.querySelector(`.episodes ul li:nth-child(${storedEp})`).click() : null;
+            }
         })
-
         // locoalStorage end
     </script>
 </body>

@@ -1,5 +1,6 @@
 @import url('css/episodes.css');
 @import url('css/contact.css');
+@import url('css/toggle.css');
 
 :root {
     --color-bg: #233340;
@@ -16,6 +17,15 @@
     --color-laravel: #1A1A1A;
     --color-laragray: #F3F4F6;
     --color-larared: #911a13;
+
+    /* toggle */
+    --sz: 2vmin;
+    --on: #4CAF50;
+    --of: #f50000;
+    --gr: #666666;
+    --tr: all 0.5s ease 0s;
+    --lg: var(--of);
+    /* toggle end */
 }
 
 * {
@@ -45,6 +55,16 @@ nav {
     color: var(--color-white);
     z-index: 1000;
     /* Ensure it stays on top of other elements */
+}
+
+.toggleFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggleText {
+    margin-right: 5px;
 }
 
 .nav-links {

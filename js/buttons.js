@@ -37,6 +37,11 @@ let classes = document.getElementById('classes');
 let php = document.getElementById('php');
 let js = document.getElementById('js');
 let laravel = document.getElementById('laravel');
+// const checkBox = document.getElementById('checkbox');
+
+// checkBox.addEventListener('change', () => {
+//     chickbox.checked ? console.log('Green') : console.log('Red');
+// })
 
 classes.addEventListener('click', () => {
     contents = contentsClass;
@@ -53,9 +58,12 @@ classes.addEventListener('click', () => {
     document.querySelector('.presentation').style.display = 'none';
     let storedLocally = localStorage.getItem('activeButton');
     if (storedLocally != 'classes') {
-        localStorage.clear()
+        localStorage.removeItem('activeEpisode');
     }
-    localStorage.setItem('activeButton', 'classes');
+    if (localStorage.getItem('checkBool') === 'true') {
+        localStorage.setItem('activeButton', 'classes');
+    }
+
 });
 
 php.addEventListener('click', () => {
@@ -84,9 +92,11 @@ php.addEventListener('click', () => {
     });
     let storedLocally = localStorage.getItem('activeButton');
     if (storedLocally != 'php') {
-        localStorage.clear()
+        localStorage.removeItem('activeEpisode');
     }
-    localStorage.setItem('activeButton', 'php');
+    if (localStorage.getItem('checkBool') === 'true') {
+        localStorage.setItem('activeButton', 'php');
+    }
 });
 
 js.addEventListener('click', () => {
@@ -115,9 +125,11 @@ js.addEventListener('click', () => {
     });
     let storedLocally = localStorage.getItem('activeButton');
     if (storedLocally != 'js') {
-        localStorage.clear()
+        localStorage.removeItem('activeEpisode');
     }
-    localStorage.setItem('activeButton', 'js');
+    if (localStorage.getItem('checkBool') === 'true') {
+        localStorage.setItem('activeButton', 'js');
+    }
 });
 
 laravel.addEventListener('click', () => {
@@ -146,10 +158,13 @@ laravel.addEventListener('click', () => {
         item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-larared');
     });
     let storedLocally = localStorage.getItem('activeButton');
+    console.log(storedLocally);
     if (storedLocally != 'laravel') {
-        localStorage.clear()
+        localStorage.removeItem('activeEpisode');
     }
-    localStorage.setItem('activeButton', 'laravel');
+    if (localStorage.getItem('checkBool') === 'true') {
+        localStorage.setItem('activeButton', 'laravel');
+    }
 });
 
 // Episodes End
