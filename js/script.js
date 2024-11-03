@@ -16,6 +16,7 @@ function updateEpisodesList(numberOfLines, contents, titleVar) {
                 localStorage.setItem('activeEpisode', index + 1);
             });
         }
+
     }
     // Open and close episode bar
     let currentExpandedItem = null;

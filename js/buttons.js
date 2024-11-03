@@ -37,11 +37,8 @@ let classes = document.getElementById('classes');
 let php = document.getElementById('php');
 let js = document.getElementById('js');
 let laravel = document.getElementById('laravel');
-// const checkBox = document.getElementById('checkbox');
 
-// checkBox.addEventListener('change', () => {
-//     chickbox.checked ? console.log('Green') : console.log('Red');
-// })
+let categoryMemory = ''
 
 classes.addEventListener('click', () => {
     contents = contentsClass;
@@ -63,6 +60,7 @@ classes.addEventListener('click', () => {
     if (localStorage.getItem('checkBool') === 'true') {
         localStorage.setItem('activeButton', 'classes');
     }
+    categoryMemory = 'classes';
 
 });
 
