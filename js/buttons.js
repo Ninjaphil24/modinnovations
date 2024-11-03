@@ -1,3 +1,6 @@
+let categoryMemory = ''
+let container = document.querySelector('.container');
+
 document.addEventListener('DOMContentLoaded', () => {
     document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-bg');
     document.body.style.backgroundImage = "url('img/ModLogoBG.svg')";
@@ -26,6 +29,12 @@ home.addEventListener('click', () => {
     document.querySelector('.home').style.display = 'flex';
     document.querySelector('.about').style.display = 'none';
     setActiveButton(home);
+    console.log(container)
+    console.log(categoryMemory)
+
+    if (window.innerWidth <= 650) {
+        container.style.marginTop = '10px'
+    }
 });
 
 about.addEventListener('click', () => {
@@ -40,6 +49,9 @@ about.addEventListener('click', () => {
     document.querySelector('.about').style.display = 'flex';
     document.querySelector('.home').style.display = 'none';
     setActiveButton(about);
+    if (window.innerWidth <= 650) {
+        container.style.marginTop = '10px'
+    }
 });
 // Presentation End
 
@@ -51,7 +63,6 @@ let php = document.getElementById('php');
 let js = document.getElementById('js');
 let laravel = document.getElementById('laravel');
 
-let categoryMemory = ''
 
 classes.addEventListener('click', () => {
     contents = contentsClass;
@@ -87,6 +98,10 @@ classes.addEventListener('click', () => {
         localStorage.setItem('activeButton', 'classes');
     }
     categoryMemory = 'classes';
+
+    if (window.innerWidth <= 650) {
+        container.style.marginTop = '70px'
+    }
 
 });
 
@@ -125,7 +140,9 @@ php.addEventListener('click', () => {
         localStorage.setItem('activeButton', 'php');
     }
     categoryMemory = 'php';
-
+    if (window.innerWidth <= 650) {
+        container.style.marginTop = '70px'
+    }
 });
 
 js.addEventListener('click', () => {
@@ -163,6 +180,9 @@ js.addEventListener('click', () => {
         localStorage.setItem('activeButton', 'js');
     }
     categoryMemory = 'js';
+    if (window.innerWidth <= 650) {
+        container.style.marginTop = '70px'
+    }
 });
 
 laravel.addEventListener('click', () => {
@@ -202,6 +222,10 @@ laravel.addEventListener('click', () => {
         localStorage.setItem('activeButton', 'laravel');
     }
     categoryMemory = 'laravel';
+    if (window.innerWidth <= 650) {
+        container.style.marginTop = '70px'
+    }
 });
+
 
 // Episodes End
