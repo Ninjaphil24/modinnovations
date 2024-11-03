@@ -1,21 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
     document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-bg');
+    document.body.style.backgroundImage = "url('img/ModLogoBG.svg')";
+    document.body.style.backgroundAttachment = "fixed";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundPosition = "center";
+    document.body.style.backgroundSize = "50%";
     document.querySelector('.presentation').style.display = 'flex';
     document.querySelector('.home').style.display = 'flex';
     document.querySelector('.about').style.display = 'none';
-    document.body.style.backgroundImage = "none";
 });
+// document.body.style.opacity = "";
 // Presentation Start
 let home = document.getElementById('home');
 let about = document.getElementById('about');
 
 home.addEventListener('click', () => {
     document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-bg');
+    document.body.style.backgroundImage = "url('img/ModLogoBG.svg')";
+    document.body.style.backgroundAttachment = "fixed";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundPosition = "center";
+    document.body.style.backgroundSize = "50%";
     document.querySelector('.episodes').style.display = 'none';
     document.querySelector('.presentation').style.display = 'flex';
     document.querySelector('.home').style.display = 'flex';
     document.querySelector('.about').style.display = 'none';
-    document.body.style.backgroundImage = "none";
     setActiveButton(home);
 });
 
@@ -53,6 +62,16 @@ classes.addEventListener('click', () => {
     updateEpisodesList(numberOfLines, contents, titleVar);
     document.querySelector('.episodes').style.display = 'flex';
     document.querySelector('.presentation').style.display = 'none';
+    document.querySelectorAll('.content a').forEach(item => {
+        item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-classes2');
+    });
+
+    document.querySelectorAll('.content a:hover').forEach(item => {
+        item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-classes2');
+    });
+    document.querySelectorAll('.episodes ul li').forEach(item => {
+        item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-classes2');
+    });
     let storedLocally = localStorage.getItem('activeButton');
     if (storedLocally != 'classes') {
         localStorage.removeItem('activeEpisode');

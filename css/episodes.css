@@ -1,7 +1,7 @@
 /* Courses Navbar Start */
 .container {
     display: flex;
-    margin-top: 70px;
+    margin-top: 90px;
     justify-content: center;
     width: 100%;
 }
@@ -40,6 +40,15 @@ button#php img,
 button#js img,
 button#laravel img {
     width: 100%;
+    transition: height 0.5s;
+}
+
+button#classes:hover img,
+button#php:hover img,
+button#js:hover img,
+button#laravel:hover img {
+    /* width: 110%; */
+    height: 110%;
 }
 
 /* button#classes img {
