@@ -36,7 +36,7 @@
     border: none;
     text-decoration: none;
     width: 200px;
-    font-family: 'MBFCannoRegular', sans-serif;
+    font-family: 'Impact', sans-serif;
     font-size: 17px;
     color: #D8C278;
     padding: 15px;
@@ -117,7 +117,7 @@
     color: #d1f3f5;
     opacity: 1;
     /* Firefox */
-    font-family: sans-serif;
+    font-family: 'Impact', sans-serif;
     padding: 10px;
 }
 
@@ -149,7 +149,7 @@
     border: none;
     text-decoration: none;
     width: 200px;
-    font-family: 'MBFCannoRegular', sans-serif;
+    font-family: 'Impact', sans-serif;
     font-size: 17px;
     color: #D8C278;
     padding: 15px;
@@ -181,6 +181,6 @@
 
     .formflex {
         display: flex;
-        flex-direction:column
+        flex-direction: column
     }
 }
