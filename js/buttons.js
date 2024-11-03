@@ -29,8 +29,6 @@ home.addEventListener('click', () => {
     document.querySelector('.home').style.display = 'flex';
     document.querySelector('.about').style.display = 'none';
     setActiveButton(home);
-    console.log(container)
-    console.log(categoryMemory)
 
     if (window.innerWidth <= 650) {
         container.style.marginTop = '10px'

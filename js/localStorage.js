@@ -12,6 +12,7 @@ checkbox.addEventListener('change', () => {
         categoryMemory == 'classes' ? classBtn.click() : categoryMemory == 'php' ? phpBtn.click() : categoryMemory == 'js' ? jsBtn.click() : categoryMemory == 'laravel' ? laravelBtn.click() : null
     } else {
         localStorage.clear();
+        categoryMemory = '';
     }
 })
 document.addEventListener('DOMContentLoaded', () => {
