@@ -2,6 +2,7 @@
 @import url('css/contact.css');
 @import url('css/toggle.css');
 @import url('css/buttons.css');
+@import url('css/responsive.css');
 
 
 :root {
@@ -64,6 +65,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
 #toggleText {
@@ -119,7 +121,7 @@ nav .logo img {
 .home,
 .about {
     display: flex;
-    width: 60%;
+    width: 80%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -128,3 +130,39 @@ nav .logo img {
 }
 
 /* Home end */
+
+
+
+
+@media only screen and (max-width: 650px) {
+    nav {}
+
+    .nav-links {}
+
+    .nav-links li {}
+
+    .presentation {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .titles {
+        height:30vh;
+    }
+
+    .home,
+    .about {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* End of media query 650 */
+
+@media only screen and (max-width: 450px) {
+    :root {
+        --sz: 3vmin;
+    }
+}
+
+/* End of media query 450 */

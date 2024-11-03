@@ -58,6 +58,9 @@ classes.addEventListener('click', () => {
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundPosition = "10px 70px";
     document.body.style.backgroundSize = "100px";
+    if (window.innerWidth <= 650) {
+        document.body.style.backgroundImage = "none";
+    }
     let titleVar = `An introduction to classes in php (with js)`
     updateEpisodesList(numberOfLines, contents, titleVar);
     document.querySelector('.episodes').style.display = 'flex';
@@ -92,6 +95,9 @@ php.addEventListener('click', () => {
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundPosition = "10px 70px";
+    if (window.innerWidth <= 650) {
+        document.body.style.backgroundImage = "none";
+    }
     let titleVar = `Understanding PHP and MVC`
     updateEpisodesList(numberOfLines, contents, titleVar);
     setActiveButton(php);
@@ -126,6 +132,9 @@ js.addEventListener('click', () => {
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundPosition = "10px 70px";
     let titleVar = `Front-End Demystified: A Deep Dive into Vue.js`
+    if (window.innerWidth <= 650) {
+        document.body.style.backgroundImage = "none";
+    }
     updateEpisodesList(numberOfLines, contents, titleVar);
     setActiveButton(js);
     document.querySelector('.episodes').style.display = 'flex';
@@ -158,6 +167,9 @@ laravel.addEventListener('click', () => {
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "170px";
     document.body.style.backgroundPosition = "10px 70px";
+    if (window.innerWidth <= 650) {
+        document.body.style.backgroundImage = "none";
+    }
     let titleVar = `Full stack, with CI/CD and chatGPT`
     updateEpisodesList(numberOfLines, contents, titleVar);
     setActiveButton(laravel);

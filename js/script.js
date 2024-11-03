@@ -70,6 +70,9 @@ function updateEpisodesList(numberOfLines, contents, titleVar) {
         item.addEventListener('mouseover', () => {
             item.style.transition = 'all 0.4s';
             item.style.transform = 'scale(1.2)';
+            if (window.innerWidth <= 650) {
+                item.style.transform = 'scale(1)';
+            }
             item.style.cursor = 'pointer';
             item.style.zIndex = '10'; // Ensure it stays above other elements
         });

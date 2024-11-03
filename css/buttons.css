@@ -33,8 +33,13 @@
     left: 0px;
 }
 
-@media (min-width: 768px) {
-    .button-52 {
-        padding: 13px 50px 13px;
-    }
+@media (max-width: 650px) {
+   .button-52 {
+    margin: 3px;
+    font-size: 13px;
+    font-weight: 50;
+    letter-spacing: 1px;
+    padding: 8px 6px 8px;
+   }
+
 }
