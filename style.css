@@ -127,6 +127,8 @@ nav .logo img {
     align-items: center;
     height: 60vh;
     color: var(--color-white);
+    column-count: 2;
+    column-gap: 2em;
 }
 
 /* Home end */
@@ -135,11 +137,6 @@ nav .logo img {
 
 
 @media only screen and (max-width: 650px) {
-    nav {}
-
-    .nav-links {}
-
-    .nav-links li {}
 
     .presentation {
         flex-direction: column;
@@ -147,7 +144,7 @@ nav .logo img {
     }
 
     .titles {
-        height:30vh;
+        height: 30vh;
     }
 
     .home,

@@ -8,11 +8,12 @@ function updateEpisodesList(numberOfLines, contents, titleVar) {
         li.textContent = episode;
         li.dataset.index = index; // Store the index in a data attribute
         episodesList.appendChild(li);
-
-        console.log("outside if")
+        // console.log("outside if")
         if (localStorage.getItem('checkBool') === 'true') {
-            console.log("inside if")
+            // console.log("inside if")
+            console.log("click for loop before event listener")
             li.addEventListener('click', () => {
+                console.log("click for loop event listener")
                 localStorage.setItem('activeEpisode', index + 1);
             });
         }
@@ -33,6 +34,7 @@ function updateEpisodesList(numberOfLines, contents, titleVar) {
                 currentExpandedItem.querySelector('.episode-title').style.display = 'block'; // Show the title again
             }
             if (item.querySelector('.content')) {
+                console.log('click')
                 item.querySelector('.content').remove(); // Remove content
                 item.querySelector('.episode-title').style.display = 'block'; // Show the title again
                 item.style.height = '50px'; // Reset height

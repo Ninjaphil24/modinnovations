@@ -120,6 +120,8 @@ php.addEventListener('click', () => {
     if (localStorage.getItem('checkBool') === 'true') {
         localStorage.setItem('activeButton', 'php');
     }
+    categoryMemory = 'php';
+
 });
 
 js.addEventListener('click', () => {
@@ -156,6 +158,7 @@ js.addEventListener('click', () => {
     if (localStorage.getItem('checkBool') === 'true') {
         localStorage.setItem('activeButton', 'js');
     }
+    categoryMemory = 'js';
 });
 
 laravel.addEventListener('click', () => {
@@ -194,6 +197,7 @@ laravel.addEventListener('click', () => {
     if (localStorage.getItem('checkBool') === 'true') {
         localStorage.setItem('activeButton', 'laravel');
     }
+    categoryMemory = 'laravel';
 });
 
 // Episodes End
