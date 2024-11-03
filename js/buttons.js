@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundPosition = "center";
-    document.body.style.backgroundSize = "50%";
+    document.body.style.backgroundSize = "80%";
     document.querySelector('.presentation').style.display = 'flex';
     document.querySelector('.home').style.display = 'flex';
     document.querySelector('.about').style.display = 'none';
@@ -20,7 +20,7 @@ home.addEventListener('click', () => {
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundPosition = "center";
-    document.body.style.backgroundSize = "50%";
+    document.body.style.backgroundSize = "80%";
     document.querySelector('.episodes').style.display = 'none';
     document.querySelector('.presentation').style.display = 'flex';
     document.querySelector('.home').style.display = 'flex';
@@ -30,11 +30,15 @@ home.addEventListener('click', () => {
 
 about.addEventListener('click', () => {
     document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-bg');
+    document.body.style.backgroundImage = "url('img/ModLogoBG.svg')";
+    document.body.style.backgroundAttachment = "fixed";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundPosition = "center";
+    document.body.style.backgroundSize = "80%";
     document.querySelector('.episodes').style.display = 'none';
     document.querySelector('.presentation').style.display = 'flex';
     document.querySelector('.about').style.display = 'flex';
     document.querySelector('.home').style.display = 'none';
-    document.body.style.backgroundImage = "none";
     setActiveButton(about);
 });
 // Presentation End

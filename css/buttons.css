@@ -1,6 +1,7 @@
 /* CSS */
 .button-52 {
     margin: 10px;
+    font-family: 'Impact', sans-serif;
     font-size: 16px;
     font-weight: 200;
     letter-spacing: 1px;
@@ -34,12 +35,12 @@
 }
 
 @media (max-width: 650px) {
-   .button-52 {
-    margin: 3px;
-    font-size: 13px;
-    font-weight: 50;
-    letter-spacing: 1px;
-    padding: 8px 6px 8px;
-   }
+    .button-52 {
+        margin: 3px;
+        font-size: 13px;
+        font-weight: 50;
+        letter-spacing: 1px;
+        padding: 8px 6px 8px;
+    }
 
 }
