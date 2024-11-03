@@ -51,7 +51,10 @@ classes.addEventListener('click', () => {
     updateEpisodesList(numberOfLines, contents, titleVar);
     document.querySelector('.episodes').style.display = 'flex';
     document.querySelector('.presentation').style.display = 'none';
-    localStorage.clear();
+    let storedLocally = localStorage.getItem('activeButton');
+    if (storedLocally != 'classes') {
+        localStorage.clear()
+    }
     localStorage.setItem('activeButton', 'classes');
 });
 
@@ -79,7 +82,10 @@ php.addEventListener('click', () => {
     document.querySelectorAll('.episodes ul li').forEach(item => {
         item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-php2');
     });
-    localStorage.clear();
+    let storedLocally = localStorage.getItem('activeButton');
+    if (storedLocally != 'php') {
+        localStorage.clear()
+    }
     localStorage.setItem('activeButton', 'php');
 });
 
@@ -107,7 +113,10 @@ js.addEventListener('click', () => {
     document.querySelectorAll('.episodes ul li').forEach(item => {
         item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-js2');
     });
-    localStorage.clear();
+    let storedLocally = localStorage.getItem('activeButton');
+    if (storedLocally != 'js') {
+        localStorage.clear()
+    }
     localStorage.setItem('activeButton', 'js');
 });
 
@@ -136,7 +145,10 @@ laravel.addEventListener('click', () => {
     document.querySelectorAll('.episodes ul li').forEach(item => {
         item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-larared');
     });
-    localStorage.clear();
+    let storedLocally = localStorage.getItem('activeButton');
+    if (storedLocally != 'laravel') {
+        localStorage.clear()
+    }
     localStorage.setItem('activeButton', 'laravel');
 });
 
