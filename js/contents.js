@@ -689,7 +689,7 @@ CORS
 nodemon and complete fetch
 Async version of fetch
 
-Link to callstack tutorial`,
+<a href="https://youtu.be/eiC58R16hb8?si=2X3VprOzYOrp5B4w" target="_blank">Link to Callstack Tut</a>`,
 
     `<a href="https://youtu.be/4jhPy7U6PsM" target="_blank">Go to Episode 20</a>
 Node.js continued: Express & post request
