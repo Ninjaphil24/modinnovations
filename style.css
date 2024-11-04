@@ -93,8 +93,6 @@ nav .logo img {
     display: flex;
     justify-content: center;
     align-items: center;
-    outline: 5px solid var(--color-white);
-    border-radius: 15px;
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -124,6 +122,9 @@ nav .logo img {
 .home,
 .about {
     /* font-size: 20px; */
+    /* outline: 5px solid var(--color-white); */
+    border-radius: 15px;
+    padding: 45px;
     display: flex;
     width: 80%;
     flex-direction: column;
