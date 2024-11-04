@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+/* Good */
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+/* Good */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
+/* Good size */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+/* Very Good size */
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+/* Possible Winner */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+/* Possible Winner */
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+
 @import url('css/episodes.css');
 @import url('css/contact.css');
 @import url('css/toggle.css');
@@ -23,7 +42,7 @@
     --color-larared: #911a13;
 
     /* toggle */
-    --sz: 2vmin;
+    --sz: 1.6vmin;
     --on: #4CAF50;
     --of: #f50000;
     --gr: #666666;
@@ -42,7 +61,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-    font-family: "Impact", sans-serif;
+    font-family: "Staatliches", sans-serif;
     transition: 2s;
 }
 
@@ -93,11 +112,11 @@ nav .logo img {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* outline: 5px solid var(--color-white); */
+    border-radius: 15px;
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
-    height: auto;
-    /* Adjust height based on contents */
 }
 
 .presentation h1 {
@@ -121,17 +140,15 @@ nav .logo img {
 
 .home,
 .about {
-    /* font-size: 20px; */
-    /* outline: 5px solid var(--color-white); */
-    border-radius: 15px;
-    padding: 45px;
     display: flex;
+    font-size: 1.3rem;
     width: 80%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 40vh;
     color: var(--color-white);
+    margin-bottom: 5rem;
 }
 
 
@@ -148,13 +165,8 @@ nav .logo img {
 
 @media only screen and (max-width: 850px) {
 
-    .home,
-    .about {
-        /* font-size: 15px; */
-    }
-
     nav {
-        padding: 20px 8px;
+        padding: 10px 8px;
     }
 
     .homeflex {
@@ -170,7 +182,7 @@ nav .logo img {
     }
 
     .presentation {
-        margin-top: 90px;
+        margin-top: 70px;
         flex-direction: column;
         padding: 10px;
     }
@@ -187,6 +199,7 @@ nav .logo img {
     .about {
         width: 90%;
         height: auto;
+        margin-bottom: 0;
     }
 }
 
@@ -195,6 +208,11 @@ nav .logo img {
 @media only screen and (max-width: 450px) {
     :root {
         --sz: 3vmin;
+    }
+
+    .home,
+    .about {
+        font-size: 1rem
     }
 }
 
