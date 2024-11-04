@@ -101,6 +101,8 @@ classes.addEventListener('click', () => {
         container.style.marginTop = '70px'
     }
 
+    setActiveButton();
+
 });
 
 php.addEventListener('click', () => {
@@ -141,6 +143,8 @@ php.addEventListener('click', () => {
     if (window.innerWidth <= 650) {
         container.style.marginTop = '70px'
     }
+    setActiveButton();
+
 });
 
 js.addEventListener('click', () => {
@@ -181,6 +185,8 @@ js.addEventListener('click', () => {
     if (window.innerWidth <= 650) {
         container.style.marginTop = '70px'
     }
+    setActiveButton();
+
 });
 
 laravel.addEventListener('click', () => {
@@ -223,6 +229,8 @@ laravel.addEventListener('click', () => {
     if (window.innerWidth <= 650) {
         container.style.marginTop = '70px'
     }
+    setActiveButton();
+
 });
 
 

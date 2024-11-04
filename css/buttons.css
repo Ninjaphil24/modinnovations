@@ -29,7 +29,8 @@
     transition: 0.2s;
 }
 
-.button-52:hover:after {
+.button-52:hover:after,
+.button-52.active:after {
     top: 0px;
     left: 0px;
 }
