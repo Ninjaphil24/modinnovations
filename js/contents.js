@@ -1,5 +1,6 @@
 const contentsClass = [
     `<strong>An introduction to classes in php (with js)</strong>
+
     <a href="https://youtu.be/CuZVhF_P96k" target="_blank">Go to Intro</a>`,
     `<a href="https://youtu.be/CuZVhF_P96k" target="_blank">Go to Episode 1</a>
 Basic concepts
@@ -37,12 +38,14 @@ Typehints in constructor
 Typehints in methods
 Traits
 Recap
+
 <a href="https://youtu.be/xh4JOHd5sjM?si=g7xDD37U9g6I2egm&t=1318" target="_blank">Learn Autoload here</a>     
 `
 ];
 
 const contentsPHP = [
-    `<strong>Understanding PHP and MVC
+    `<strong>Understanding PHP and MVC</strong>
+
     <a href="" target="_blank">Go to Intro</a>
     <a href="https://github.com/Ninjaphil24/mvctut" target="_blank">Go to Github Repo</a>`,
     `<a href="https://youtu.be/FZxj8uEcK3w" target="_blank">Go to Episode 1</a>
@@ -327,7 +330,7 @@ array_shift
 spread operator
 Outro
 
-Links for regular expressions`,
+<a href="https://regexr.com/" target="_blank">Link to RegEx</a>`,
 
     `<a href="https://youtu.be/EB7UqALxhIQ" target="_blank">Go to Episode 22</a>
 Intro and review of router
@@ -473,6 +476,7 @@ Js packaging complete and debugging
 
 const contentsJS = [
     `<strong>Front-End Demystified: A Deep Dive into Vue.js
+
     <a href="" target="_blank">Go to Intro</a>
     <a href="https://github.com/Ninjaphil24/VanillaVue" target="_blank">Go to Github Repo</a>`,
     `<a href="https://youtu.be/-GxQXzoWZ7c" target="_blank">Go to Episode 1</a>
@@ -736,7 +740,7 @@ Replacing lifecycle hooks with watchers`
 ];
 
 const contentsLaravel = [
-    `<strong>Full stack, with CI/CD and chatGPT
+    `<strong>Full stack, with CI/CD and chatGPT (Under Construction, Episodes are placeholders)
     <a href="https://youtu.be/CuZVhF_P96k" target="_blank">Go to Intro</a>`,
     `<a href="https://youtu.be/CuZVhF_P96k" target="_blank">Go to Episode 1</a>
 Intro

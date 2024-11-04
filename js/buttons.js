@@ -201,7 +201,7 @@ laravel.addEventListener('click', () => {
     if (window.innerWidth <= 650) {
         document.body.style.backgroundImage = "none";
     }
-    let titleVar = `Full stack, with CI/CD and chatGPT`
+    let titleVar = `Full stack, with CI/CD and chatGPT (Under Construction, Episodes are placeholders)`
     updateEpisodesList(numberOfLines, contents, titleVar);
     setActiveButton(laravel);
     document.querySelector('.episodes').style.display = 'flex';
