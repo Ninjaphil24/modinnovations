@@ -95,7 +95,10 @@ Review of all steps
 Git Commit
 Error Handling->try (throw new Exception) catch
 Creating an error log
-.gitignore and commit`,
+.gitignore and commit
+
+<a href="https://github.com/Ninjaphil24/mvctut/commit/e28e0983c3af7ec52d1f55abe74017ca6c6d7d21" target="_blank">Get html/css here</a>
+`,
 
     `<a href="https://youtu.be/-F9ejmkX2Rs" target="_blank" >Go to Episode 5</a>
 Create Migration
