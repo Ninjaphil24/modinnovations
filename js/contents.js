@@ -125,7 +125,31 @@ Handling multiple errors
 MySQL "doesn't equal" operator
 Wrong error demo
 mysql_stmt -> errno
-Error code working`,
+Error code working
+
+
+In PHP 8.0 and later, mysqli functions throw exceptions by default when an error occurs.
+Panagiwtis
+To fix this, wrap the execute() call in a try block and catch the mysqli_sql_exception
+
+try {
+        if ($statement->execute()) {
+            header("Location: success.php");
+            exit;
+        }
+} catch (mysqli_sql_exception $e) {
+    if ($e->getCode() === 1062) { // Duplicate entry
+        $errorbool1 = true;
+    } else if ($e->getCode() === 3819) { // Invalid email format (if triggered by a constraint)
+        $errorbool2 = true;
+    } else {
+        // Log unexpected errors for debugging
+        error_log($e->getMessage(), 3, 'error.log');
+        echo "An unexpected error occurred!";
+    }
+}
+
+`,
 
     `<a href="https://youtu.be/QCOomvlbVAQ" target="_blank">Go to Episode 7</a>    
 Intro to Unit Testing
