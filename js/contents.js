@@ -129,7 +129,6 @@ Error code working
 
 
 In PHP 8.0 and later, mysqli functions throw exceptions by default when an error occurs.
-Panagiwtis
 To fix this, wrap the execute() call in a try block and catch the mysqli_sql_exception
 
 try {
