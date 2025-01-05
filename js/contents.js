@@ -768,6 +768,7 @@ Replacing lifecycle hooks with watchers`
 const contentsLaravel = [
     `<strong>Full stack, with CI/CD and chatGPT</strong>
     <a href="https://youtu.be/CuZVhF_P96k" target="_blank">Go to Intro</a>
+    <a href="https://github.com/Ninjaphil24/FullStackCICD" target="_blank">Go to Github Repo</a>
     <a href="https://youtu.be/SqTdHCTWqks?si=2k1MeJ-yQZkZkuIj" target="_blank">Laravel by Jeffrey Way</a>
     <a href="https://youtu.be/PjCqsf87Z1Y?si=J8Pw0f3hr4IeFX0q" target="_blank">Quasar by Make Apps with Danny</a>
     <a href="https://youtu.be/pg19Z8LL06w?si=oHCH1IeZaQMNh4AP" target="_blank">Docker by 
