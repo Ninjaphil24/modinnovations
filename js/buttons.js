@@ -191,7 +191,7 @@ js.addEventListener('click', () => {
 
 laravel.addEventListener('click', () => {
     contents = contentsLaravel;
-    numberOfLines = 5; // Set appropriate number of lines for Laravel
+    numberOfLines = 4; // Set appropriate number of lines for Laravel
     document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-laravel');
     document.body.style.backgroundImage = "url('img/laravel.svg')";
     document.body.style.backgroundAttachment = "fixed";
@@ -201,7 +201,7 @@ laravel.addEventListener('click', () => {
     if (window.innerWidth <= 650) {
         document.body.style.backgroundImage = "none";
     }
-    let titleVar = `Full stack, with CI/CD and chatGPT (Under Construction, Episodes are placeholders)`
+    let titleVar = `Full stack, with CI/CD and chatGPT`
     updateEpisodesList(numberOfLines, contents, titleVar);
     setActiveButton(laravel);
     document.querySelector('.episodes').style.display = 'flex';

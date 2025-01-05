@@ -766,48 +766,60 @@ Replacing lifecycle hooks with watchers`
 ];
 
 const contentsLaravel = [
-    `<strong>Full stack, with CI/CD and chatGPT (Under Construction, Episodes are placeholders)
-    <a href="https://youtu.be/CuZVhF_P96k" target="_blank">Go to Intro</a>`,
-    `<a href="https://youtu.be/CuZVhF_P96k" target="_blank">Go to Episode 1</a>
-Intro
-Basic concepts
-Why Classes?
-Visualizing Classes
-Create class with constructor
-Static Functions
-Naming error
-Recap
-Instantiation
-Recap
-Concepts of economical writing
-Recap`,
+    `<strong>Full stack, with CI/CD and chatGPT</strong>
+    <a href="https://youtu.be/CuZVhF_P96k" target="_blank">Go to Intro</a>
+    <a href="https://youtu.be/SqTdHCTWqks?si=2k1MeJ-yQZkZkuIj" target="_blank">Laravel by Jeffrey Way</a>
+    <a href="https://youtu.be/PjCqsf87Z1Y?si=J8Pw0f3hr4IeFX0q" target="_blank">Quasar by Make Apps with Danny</a>
+    <a href="https://youtu.be/pg19Z8LL06w?si=oHCH1IeZaQMNh4AP" target="_blank">Docker by 
+TechWorld with Nana</a>`,
+    `<a href="https://youtu.be/jszmgJ20DBc" target="_blank">Go to Episode 1</a>
+Conceptualizing a computer
+wsl
+Download Docker
+Setup with chatGPT, docker and laravel
+Dockerfile
+docker-compose.yml
+Run docker
+Containers running
+Laravel/Docker setup complete
+Visualization of virtual machines/containers
+Understanding CI/CD
+Workflows with Github Actions
+Connecting to Github Actions container terminal
+1st full CI complete`,
 
-    `<a href="https://youtu.be/bNN3aZizrb4" target="_blank">Go to Episode 2</a>
-Intro
-What is an object?
-Object in Javascript
-Associative(Key Value Pairs) vs Indexed 
-Explanation of JS vs PHP
-Object Instantiation of classes
-Initializing variables in php vs js
-Understanding "this"`,
+    `<a href="https://youtu.be/5YCva_JGPwE" target="_blank">Go to Episode 2</a>
+Install NVM
+Install Quasar
+Install Cypress & Error Fixes
+Frontend yaml file for Workflow
+Laravel Sanctum
+Create a connection test button
+Commit and Cypress corrections
+Demo of XSRF Token in Dev Tools and remove HasApiTokens from User`,
 
-    `<a href="https://youtu.be/PEjaTR2aLXI" target="_blank">Go to Episode 3</a>
-Intro
-Objects and "this" (continued from previous episode)
-Why "this"?  Addressing scope of classes`,
-
-    `<a href="https://youtu.be/PZmainUEBYs" target="_blank">Go to Episode 4</a>
-Intro
-Demonstration of inheritance for functions
-Inheritance of constructor
-Abstract Classes
-Abstract Functions
-Interface
-Typehints in constructor
-Typehints in methods
-Traits
-Recap`
+    `<a href="https://youtu.be/O3FiR6Re7jc" target="_blank">Go to Episode 3</a>
+Install Breeze and configure
+Front end setup for Registration
+Registration Logic
+Demo of XSRF Token protection by Sanctum
+Test Connection button no longer required
+q-btn
+Move registration logic to store
+Login setup
+q-btn: Button group
+1st login attempt and cors
+CORS resolved, debug unprocessable content
+Login successful & get response from laravel
+Refactor tests and commit
+q-spinner
+Handle logged in status between laravel and quasar
+isLoggedIn state getter and !! operator
+Using store methods in MainLayout.vue and TS errors
+Change GUI based on logged in status & logout
+Check automatic login after registration
+Final Cypress Test and commit
+Farewell for now`
 ];
 
 
