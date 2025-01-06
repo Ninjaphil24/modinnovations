@@ -1,7 +1,7 @@
 const contentsClass = [
     `<strong>An introduction to classes in php (with js)</strong>
 
-    <a href="https://youtu.be/CuZVhF_P96k" target="_blank">Go to Intro</a>`,
+    <a href="https://youtu.be/73bRKHfll1A" target="_blank">Go to Intro</a>`,
     `<a href="https://youtu.be/CuZVhF_P96k" target="_blank">Go to Episode 1</a>
 Basic concepts
 Why Classes?
@@ -46,7 +46,7 @@ Recap
 const contentsPHP = [
     `<strong>Understanding PHP and MVC</strong>
 
-    <a href="" target="_blank">Go to Intro</a>
+    <a href="https://youtu.be/tk_Xk-fsoho" target="_blank">Go to Intro</a>
     <a href="https://github.com/Ninjaphil24/mvctut" target="_blank">Go to Github Repo</a>`,
     `<a href="https://youtu.be/FZxj8uEcK3w" target="_blank">Go to Episode 1</a>
     <a href="https://github.com/cretueusebiu/valet-windows" target="_blank">Go to Valet Repo</a>
@@ -497,13 +497,14 @@ Packaging js Step 1: Install node.js
 npm init and package.json in original folder
 Install Laravel Mix(instead of webpack)
 Js packaging complete and debugging
-    `
+
+    <a href="https://youtu.be/m_J2ND3hxpA" target="_blank">Outtro</a>`
 ];
 
 const contentsJS = [
     `<strong>Front-End Demystified: A Deep Dive into Vue.js
 
-    <a href="" target="_blank">Go to Intro</a>
+    <a href="https://youtu.be/ylHJ6TXyEv4" target="_blank">Go to Intro</a>
     <a href="https://github.com/Ninjaphil24/VanillaVue" target="_blank">Go to Github Repo</a>`,
     `<a href="https://youtu.be/-GxQXzoWZ7c" target="_blank">Go to Episode 1</a>
 Create basic website with boilerplate and href
@@ -767,7 +768,7 @@ Replacing lifecycle hooks with watchers`
 
 const contentsLaravel = [
     `<strong>Full stack, with CI/CD and chatGPT</strong>
-    <a href="https://youtu.be/CuZVhF_P96k" target="_blank">Go to Intro</a>
+    <a href="https://youtu.be/gdXY3ft_lhw" target="_blank">Go to Intro</a>
     <a href="https://github.com/Ninjaphil24/FullStackCICD" target="_blank">Go to Github Repo</a>
     <a href="https://youtu.be/SqTdHCTWqks?si=2k1MeJ-yQZkZkuIj" target="_blank">Laravel by Jeffrey Way</a>
     <a href="https://youtu.be/PjCqsf87Z1Y?si=J8Pw0f3hr4IeFX0q" target="_blank">Quasar by Make Apps with Danny</a>
