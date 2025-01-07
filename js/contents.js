@@ -1,7 +1,25 @@
 const contentsClass = [
     `<strong>An introduction to classes in php (with js)</strong>
 
-    <a href="https://youtu.be/73bRKHfll1A" target="_blank">Go to Intro</a>`,
+    <a href="https://youtu.be/73bRKHfll1A" target="_blank">Go to Intro</a>
+    - Introduction to classes and their basic concepts  
+- Understanding the purpose and advantages of using classes  
+- Creating and visualizing classes with constructors  
+- Static functions and their usage  
+- Error handling in class naming and instantiation  
+- Concepts of economical and efficient code writing  
+- Introduction to objects and their relationship to classes  
+- Key differences between associative and indexed structures  
+- Comparing objects and classes in JavaScript and PHP  
+- Understanding and utilizing the "this" keyword in classes  
+- Scope and relevance of "this" in objects and classes  
+- Demonstrating inheritance in classes for functions and constructors  
+- Abstract classes and functions in object-oriented programming  
+- Interfaces and their implementation in classes  
+- Using type hints in constructors and methods  
+- Introduction and use of traits in PHP  
+- Recap and consolidation of key class-related concepts  
+    `,
     `<a href="https://youtu.be/CuZVhF_P96k" target="_blank">Go to Episode 1</a>
 Basic concepts
 Why Classes?
@@ -47,7 +65,31 @@ const contentsPHP = [
     `<strong>Understanding PHP and MVC</strong>
 
     <a href="https://youtu.be/tk_Xk-fsoho" target="_blank">Go to Intro</a>
-    <a href="https://github.com/Ninjaphil24/mvctut" target="_blank">Go to Github Repo</a>`,
+    <a href="https://github.com/Ninjaphil24/mvctut" target="_blank">Go to Github Repo</a>
+    - Introduction to Valet for Windows and its installation  
+- Setting up and configuring PHP and MySQL  
+- Introduction to X-Debug and its optimization  
+- Working with MySQL, including queries, database setup, and user management  
+- Installing and configuring tools like TablePlus, phpMyAdmin, and Git  
+- Front-end and back-end integration with PHP, HTML, and CSS  
+- MVC architecture and its implementation in PHP  
+- Error handling techniques in PHP  
+- SQL injection demonstration and prevention  
+- Unit testing with PHPUnit and related testing strategies  
+- Refactoring code for optimization and testing  
+- Routing concepts and implementation in PHP applications  
+- Debugging and error logging in PHP projects  
+- JavaScript fundamentals, including the prototype chain, constructor functions, and DOM interactions  
+- AJAX and Fetch API integration with PHP for dynamic content loading  
+- Working with JSON in PHP and JavaScript  
+- Creating modular components for JavaScript and PHP  
+- Local storage and cookies in web applications  
+- Middleware implementation and its use cases  
+- Async/await, APIs, and curl in PHP for handling external data  
+- Push notifications setup and integration  
+- Packaging and managing dependencies using Composer and Node.js  
+- Refactoring and optimizing code for maintainability and scalability  
+    `,
     `<a href="https://youtu.be/FZxj8uEcK3w" target="_blank">Go to Episode 1</a>
     <a href="https://github.com/cretueusebiu/valet-windows" target="_blank">Go to Valet Repo</a>
 Valet for Windows Repo
@@ -505,7 +547,28 @@ const contentsJS = [
     `<strong>Front-End Demystified: A Deep Dive into Vue.js
 
     <a href="https://youtu.be/ylHJ6TXyEv4" target="_blank">Go to Intro</a>
-    <a href="https://github.com/Ninjaphil24/VanillaVue" target="_blank">Go to Github Repo</a>`,
+    <a href="https://github.com/Ninjaphil24/VanillaVue" target="_blank">Go to Github Repo</a>
+    - Creating basic websites and understanding Single Page Applications (SPA)  
+- Introduction to Vue.js and comparison with vanilla JavaScript  
+- Refactoring JavaScript code to resemble Vue.js structure  
+- Setting up and implementing routers in JavaScript and Vue.js  
+- Working with web components, custom HTML tags, and the Shadow DOM  
+- Utilizing template tags and scoped styles  
+- State management and reactivity in JavaScript and Vue.js  
+- Options API and Composition API in Vue.js  
+- Event handling, directives, and data binding in vanilla JavaScript and Vue.js  
+- Virtual DOM concepts and implementation  
+- Working with lifecycle hooks in JavaScript and Vue.js  
+- Parent-child component relationships and props in Vue.js and vanilla JavaScript  
+- Backend integration with Postman, Node.js, and JSON servers  
+- Understanding and implementing the call stack, task queue, and Web APIs  
+- Promises, async/await, and fetch API usage  
+- Cross-Origin Resource Sharing (CORS) and JWT authentication  
+- Middleware concepts and implementation  
+- Debugging with Vue Devtools and browser developer tools  
+- Memory management and prevention of memory leaks  
+- Watchers and reactive properties in Vue.js APIs  
+    `,
     `<a href="https://youtu.be/-GxQXzoWZ7c" target="_blank">Go to Episode 1</a>
 Create basic website with boilerplate and href
 Full page reload demo
@@ -770,10 +833,41 @@ const contentsLaravel = [
     `<strong>Full stack, with CI/CD and chatGPT</strong>
     <a href="https://youtu.be/gdXY3ft_lhw" target="_blank">Go to Intro</a>
     <a href="https://github.com/Ninjaphil24/FullStackCICD" target="_blank">Go to Github Repo</a>
+
+    You are strongly urged to do 
+    the following three tutorials before starting this series:
+
     <a href="https://youtu.be/SqTdHCTWqks?si=2k1MeJ-yQZkZkuIj" target="_blank">Laravel by Jeffrey Way</a>
     <a href="https://youtu.be/PjCqsf87Z1Y?si=J8Pw0f3hr4IeFX0q" target="_blank">Quasar by Make Apps with Danny</a>
     <a href="https://youtu.be/pg19Z8LL06w?si=oHCH1IeZaQMNh4AP" target="_blank">Docker by 
-TechWorld with Nana</a>`,
+TechWorld with Nana</a>
+
+- Conceptualization of computing and containers  
+- Setting up and configuring WSL (Windows Subsystem for Linux)  
+- Installing and using Docker with Laravel  
+- Understanding and creating Dockerfiles and "docker - compose.yml" files  
+- Running and managing Docker containers  
+- Overview of virtual machines and containerized environments  
+- Introduction to CI/CD concepts and workflows  
+- Setting up and using GitHub Actions for CI/CD pipelines  
+- Installing and configuring NVM, Quasar, and Cypress for frontend development  
+- Frontend workflow YAML file setup for CI/CD  
+- Using Laravel Sanctum for authentication and XSRF token protection  
+- Setting up frontend components for user registration and login with Laravel Breeze  
+- Debugging and resolving CORS and unprocessable content issues  
+- Implementing and handling user login and logout functionality  
+- Managing application state with Vuex/Pinia stores and methods  
+- Using Quasar components such as "q - btn" and "q - spinner"  
+- Creating and testing frontend-backend connections  
+- Writing and debugging Cypress tests for end-to-end testing  
+- Synchronizing logged-in status between frontend (Quasar) and backend (Laravel)  
+- Finalizing and committing the project workflow and tests  
+
+This series is currently incomplete.  
+The completion of this series is planned for spring of 2025.  
+Thank you for your patience.
+
+`,
     `<a href="https://youtu.be/jszmgJ20DBc" target="_blank">Go to Episode 1</a>
 Conceptualizing a computer
 wsl
