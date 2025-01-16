@@ -915,7 +915,23 @@ Using store methods in MainLayout.vue and TS errors
 Change GUI based on logged in status & logout
 Check automatic login after registration
 Final Cypress Test and commit
-Farewell for now`
+Farewell for now`,
+    `<a href="https://youtu.be/HMu4D315kp8" target="_blank">Go to Episode 4</a>
+Fix back end tests
+Confirmation that app works after refactor
+Front end tests intro
+Login button optimization 
+data-cy attribute and expanding cypress test
+Confirm open drawer in cypress
+Improve UI and tests
+Commit & Workflows inspection
+Set up Mail Hog
+Configure email notification with Breeze
+Protected routes
+Refactoring and code reliability issues
+Commit & Workflows Inspection
+(Failed) attempt to dupicate errors
+Outro`
 ];
 
 
