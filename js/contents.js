@@ -930,7 +930,7 @@ Configure email notification with Breeze
 Protected routes
 Refactoring and code reliability issues
 Commit & Workflows Inspection
-(Failed) attempt to dupicate errors
+(Failed) attempt to duplicate errors
 Outro`
 ];
 
