@@ -191,7 +191,7 @@ js.addEventListener('click', () => {
 
 laravel.addEventListener('click', () => {
     contents = contentsLaravel;
-    numberOfLines = 5; // Set appropriate number of lines for Laravel
+    numberOfLines = 6; // Set appropriate number of lines for Laravel
     document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--color-laravel');
     document.body.style.backgroundImage = "url('img/laravel.svg')";
     document.body.style.backgroundAttachment = "fixed";

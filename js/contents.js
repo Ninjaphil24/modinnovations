@@ -932,6 +932,20 @@ Refactoring and code reliability issues
 Commit & Workflows Inspection
 (Failed) attempt to duplicate errors
 Outro`
+        `<a href="https://youtu.be/KM4jPcOLVgA" target="_blank">Go to Episode 5</a>
+DeepSeek vs chatGPT: login after refresh
+Loading Indicator Refactor
+Temporary Test Refactor
+Dashboard/Navbar & child route
+Navigation guard
+Backend Refactoring and seeding
+Tinker tests (only for Model)
+Refactor Frontend first/last name
+Create Dashboard with Update function
+Test Update and corrections
+Use quasar tags for styling
+Test Update functionality
+Delete functionality`
 ];
 
 
