@@ -916,6 +916,7 @@ Change GUI based on logged in status & logout
 Check automatic login after registration
 Final Cypress Test and commit
 Farewell for now`,
+
     `<a href="https://youtu.be/HMu4D315kp8" target="_blank">Go to Episode 4</a>
 Fix back end tests
 Confirmation that app works after refactor
@@ -931,8 +932,9 @@ Protected routes
 Refactoring and code reliability issues
 Commit & Workflows Inspection
 (Failed) attempt to duplicate errors
-Outro`
-        `<a href="https://youtu.be/KM4jPcOLVgA" target="_blank">Go to Episode 5</a>
+Outro`,
+
+    `<a href="https://youtu.be/KM4jPcOLVgA" target="_blank">Go to Episode 5</a>
 DeepSeek vs chatGPT: login after refresh
 Loading Indicator Refactor
 Temporary Test Refactor
@@ -946,6 +948,7 @@ Test Update and corrections
 Use quasar tags for styling
 Test Update functionality
 Delete functionality`
+
 ];
 
 
